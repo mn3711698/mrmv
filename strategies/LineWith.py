@@ -84,6 +84,14 @@ class LineWith(Base):
             now_enter_price = self.enter_price_dict.get(symbol, 0)
             if self.pos_dict.get(symbol, 0) == 0:  # 无持仓
                 if self.order_flag_dict.get(symbol, 0) > self.last_price_dict.get(symbol, 0) > 0:
+                    open_orders = self.broker.binance_http.get_open_orders(symbol)
+                    sell_flag = 0
+                    if isinstance(open_orders, list) and len(open_orders) > 0:
+                        for o in open_orders:
+                            if o["side"] == 'SELL':  # 平仓未成交
+                                sell_flag = 1
+                    if sell_flag == 1:
+                        return
                     trading_size = self.trading_size_dict.get(symbol, 0)
                     res_buy = self.buy(symbol, 100, trading_size, mark=True)
                     self.dingding(f'回补开仓返回:{res_buy}', symbol)
@@ -109,7 +117,7 @@ class LineWith(Base):
                     self.pos_dict[symbol] = 0
                     res_sell = self.sell(symbol, 100, trading_size, mark=True)
                     rt = (self.last_price_dict.get(symbol, 0) - now_enter_price) * trading_size
-                    Profit = self.round_to(rt, self.min_price)
+                    Profit = self.round_to(rt, 0.0001)
                     self.dingding(f"止盈平多,交易所返回:{res_sell}", symbols=symbol)
                     HYJ_jd_first = "止盈平多:交易对:%s,最大浮亏损:%s,最大浮利润:%s,当前浮利润:%s,仓位:%s" % (
                         symbol, self.lowProfit_dict.get(symbol, 0), self.maxunRealizedProfit_dict.get(symbol, 0),
@@ -145,5 +153,7 @@ class LineWith(Base):
                 self.lowProfit_dict[symbol] = 0
                 self.wx_send_msg(HYJ_jd_first, HYJ_jd_tradeType, HYJ_jd_curAmount, HYJ_jd_remark)
 
-            if self.tactics_flag == 1:
-                print(f'{symbol}', 'ws接收数据成功')
+            if self.tactics_flag == 2:
+                self.dingding(f'{symbol},ws接收数据成功', symbol)
+            elif self.tactics_flag == 3:
+                print(f'{symbol}', 'ws Receive data is ok')

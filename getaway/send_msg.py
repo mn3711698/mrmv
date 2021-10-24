@@ -3,7 +3,7 @@ import requests
 import traceback
 import time
 import json
-from config import dingding_token, wx_openid, tactics_flag
+from config import dingding_token, wx_openid
 
 
 def dingding(msg, symbols):
@@ -28,8 +28,6 @@ def dingding(msg, symbols):
 
     except:
         bugcode(traceback, ctype='mrmv_dingding')
-    if tactics_flag == 2:
-        print(msg)
 
 
 def getToday(formats=3):
