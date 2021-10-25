@@ -31,7 +31,7 @@ class AbstractTradeRun:
         self.getToday = getToday
         self.dingding = dingding
         self.min_volume = 0.001
-        self.time_stop = 0.4
+        self.time_stop = 2
         self.key = key
         self.secret = secret
         self.engine = EventEngine()
