@@ -4,6 +4,7 @@
 ##############################################################################
 import redis
 import json
+import pytz
 # 注意：
 #    持仓方向为单向,不会设置杠杆
 #    下边的dingding_token,wx_openid为空的话是不会发送钉钉消息和公众号消息
@@ -13,6 +14,7 @@ version_flag = '20211024'
 with open(r'config.json', encoding='utf-8') as config_file:
     config_dict = json.load(config_file)
 
+timezone = pytz.timezone(config_dict['system']['timezone'])
 key = config_dict['trade']['exchange']['access_key']  # 币安API的key
 secret = config_dict['trade']['exchange']['access_secret']  # 币安API的secret
 

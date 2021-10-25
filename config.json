@@ -4670,6 +4670,8 @@
     "@tactics_flag": "机器人消息参数，1为钉钉确认策略计算是否正常，2为钉钉确认ws接收数据是否正常，3为打印确认ws接收数据是否正常,4为打印确认策略计算是否正常。"
   },
   "system": {
+    "timezone": "Asia/Tokyo",
+    "@timezone": "Asia/Shanghai",
     "redis": {
       "host": "127.0.0.1",
       "port": 6379,

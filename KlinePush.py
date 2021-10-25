@@ -3,7 +3,7 @@ import json
 import time
 from typing import List
 
-from config import redisc
+from config import redisc, timezone
 from apscheduler.schedulers.background import BlockingScheduler
 from concurrent.futures.thread import ThreadPoolExecutor
 
@@ -27,7 +27,7 @@ max_workers = 10
 kline_redis_namespace = 'mrmv:kline'
 save_seconds = 60 * 24 * 30
 
-scheduler = BlockingScheduler()
+scheduler = BlockingScheduler(timezone=timezone)
 
 invoker = BinanceFutureHttp()
 
