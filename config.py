@@ -10,7 +10,7 @@ import json
 
 version_flag = '20211024'
 
-with open(r'config.json') as config_file:
+with open(r'config.json', encoding='utf-8') as config_file:
     config_dict = json.load(config_file)
 
 key = config_dict['trade']['exchange']['access_key']  # 币安API的key

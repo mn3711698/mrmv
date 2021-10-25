@@ -1,7 +1,13 @@
 import json
 import time
 
+from KlinePush import timestamp, interval_millseconds_map
+from config import redisc
+
 from apscheduler.schedulers.background import BlockingScheduler
+
+from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
+
 
 def print_config():
     metas = [["AAVEUSDT", 0.2, 1.007, 0.972], ["KSMUSDT", 0.3, 1.007, 0.972], ["UNIUSDT", 1.0, 1.007, 0.972],
@@ -413,6 +419,12 @@ def scheduler_test():
     scheduler.start()
 
 
+def fetch_klines():
+    invoker = RedisWrapperBinanceFutureHttp(redisc)
+    data = invoker.get_kline_interval('BTCUSDT', '1m', limit=2)
+    print(data)
+
+
 if __name__ == '__main__':
-    scheduler_test()
+    fetch_klines()
 
