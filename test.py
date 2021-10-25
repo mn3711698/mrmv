@@ -1,5 +1,46 @@
-if __name__ == '__main__':
-    metas = [["AAVEUSDT", 0.2, 1.007, 0.972], ["KSMUSDT", 0.3, 1.007, 0.972], ["UNIUSDT", 1.0, 1.007, 0.972], ["EGLDUSDT", 0.6, 1.01, 0.972], ["BNBUSDT", 0.03, 1.007, 0.972], ["SOLUSDT", 1, 1.01, 0.972], ["DOTUSDT", 0.6, 1.007, 0.972], ["BTCUSDT", 0.001, 1.01, 0.972], ["YFIUSDT", 0.002, 1.007, 0.972], ["ETHUSDT", 0.002, 1.007, 0.972], ["LTCUSDT", 0.03, 1.007, 0.972], ["BCHUSDT", 0.08, 1.007, 0.972], ["MKRUSDT", 0.005, 1.007, 0.972], ["DASHUSDT", 0.09, 1.007, 0.972], ["ZECUSDT", 0.5, 1.007, 0.972], ["ZENUSDT", 0.3, 1.007, 0.972], ["FILUSDT", 0.4, 1.007, 0.972], ["AVAXUSDT", 1, 1.007, 0.972], ["LUNAUSDT", 2, 1.007, 0.972], ["YFIIUSDT", 0.003, 1.006, 0.972], ["COMPUSDT", 0.03, 1.007, 0.972], ["XMRUSDT", 0.05, 1.007, 0.972], ["TRBUSDT", 0.5, 1.007, 0.972], ["NEOUSDT", 0.5, 1.007, 0.972], ["NEARUSDT", 4.0, 1.007, 0.972], ["ATOMUSDT", 0.5, 1.007, 0.972], ["AXSUSDT", 2, 1.007, 0.972], ["ICPUSDT", 0.6, 1.007, 0.972], ["WAVESUSDT", 0.6, 1.007, 0.972], ["LINKUSDT", 0.6, 1.007, 0.972], ["BALUSDT", 0.6, 1.007, 0.972], ["HNTUSDT", 2, 1.007, 0.972], ["DYDXUSDT", 1.1, 1.007, 0.972], ["ALICEUSDT", 1.2, 1.007, 0.972], ["SNXUSDT", 1.1, 1.007, 0.972], ["QTUMUSDT", 1.2, 1.007, 0.972], ["RAYUSDT", 0.9, 1.007, 0.972], ["SUSHIUSDT", 3, 1.007, 0.972], ["OMGUSDT", 1.2, 1.007, 0.972], ["MASKUSDT", 2, 1.007, 0.972], ["UNFIUSDT", 1.2, 1.007, 0.972], ["SRMUSDT", 3, 1.007, 0.972], ["GTCUSDT", 1.5, 1.007, 0.97], ["RUNEUSDT", 3, 1.007, 0.972], ["BANDUSDT", 2, 1.007, 0.972], ["XTZUSDT", 3, 1.007, 0.972], ["THETAUSDT", 3, 1.007, 0.972], ["KAVAUSDT", 3, 1.007, 0.972], ["ARUSDT", 0.4, 1.007, 0.972], ["CELOUSDT", 2, 1.007, 0.972], ["RLCUSDT", 2.5, 1.007, 0.972], ["LITUSDT", 2.5, 1.007, 0.972], ["C98USDT", 3, 1.007, 0.972], ["MTLUSDT", 3, 1.007, 0.972], ["1INCHUSDT", 3, 1.007, 0.972], ["CRVUSDT", 7.1, 1.007, 0.972], ["SXPUSDT", 3.6, 1.007, 0.972], ["AUDIOUSDT", 4, 1.007, 0.972], ["TOMOUSDT", 4, 1.007, 0.972], ["ADAUSDT", 4, 1.007, 0.972], ["ICXUSDT", 4, 1.007, 0.972], ["BAKEUSDT", 4, 1.007, 0.972], ["BELUSDT", 4, 1.007, 0.972], ["ALGOUSDT", 5, 1.007, 0.972], ["CTKUSDT", 8, 1.007, 0.972], ["KNCUSDT", 4, 1.007, 0.972], ["ENJUSDT", 9, 1.007, 0.972], ["FTMUSDT", 9, 1.007, 0.972], ["DODOUSDT", 9.6, 1.007, 0.972], ["MATICUSDT", 7, 1.007, 0.972], ["IOTAUSDT", 6.7, 1.007, 0.972], ["STORJUSDT", 8, 1.007, 0.972], ["XRPUSDT", 9, 1.007, 0.972], ["RENUSDT", 9, 1.007, 0.972], ["SFPUSDT", 9, 1.007, 0.972], ["ZRXUSDT", 10.3, 1.007, 0.972], ["ALPHAUSDT", 10, 1.007, 0.972], ["ATAUSDT", 10, 1.007, 0.972], ["ONTUSDT", 9.5, 1.007, 0.972], ["OGNUSDT", 10, 1.007, 0.972], ["SANDUSDT", 10, 1.007, 0.972], ["MANAUSDT", 12, 1.007, 0.972], ["GRTUSDT", 18, 1.007, 0.972], ["OCEANUSDT", 11, 1.007, 0.972], ["BATUSDT", 12.4, 1.007, 0.972], ["CVCUSDT", 16, 1.007, 0.972], ["FLMUSDT", 16, 1.007, 0.972], ["KEEPUSDT", 20, 1.007, 0.972], ["LRCUSDT", 26, 1.007, 0.972], ["HBARUSDT", 26, 1.007, 0.972], ["CHRUSDT", 28, 1.007, 0.972], ["SKLUSDT", 29, 1.007, 0.972], ["NKNUSDT", 26, 1.007, 0.972], ["XLMUSDT", 27, 1.007, 0.972], ["BZRXUSDT", 30, 1.007, 0.972], ["CHZUSDT", 45, 1.007, 0.972], ["1000XECUSDT", 37, 1.007, 0.972], ["BLZUSDT", 68, 1.007, 0.972], ["DOGEUSDT", 34, 1.007, 0.972], ["TLMUSDT", 40, 1.007, 0.972], ["ONEUSDT", 85, 1.007, 0.972], ["XEMUSDT", 56, 1.007, 0.972], ["CELRUSDT", 64, 1.007, 0.972], ["VETUSDT", 147, 1.007, 0.972], ["RVNUSDT", 74, 1.007, 0.972], ["GALAUSDT", 151, 1.007, 0.972], ["ZILUSDT", 92, 1.007, 0.972], ["TRXUSDT", 93, 1.007, 0.972], ["ANKRUSDT", 99, 1.007, 0.972], ["IOSTUSDT", 161, 1.007, 0.972], ["DGBUSDT", 336, 1.007, 0.972], ["RSRUSDT", 258, 1.007, 0.972], ["LINAUSDT", 187, 1.007, 0.972], ["BTSUSDT", 388, 1.007, 0.972], ["STMXUSDT", 283, 1.007, 0.972], ["AKROUSDT", 459, 1.007, 0.972], ["SCUSDT", 925, 1.007, 0.972], ["1000SHIBUSDT", 305, 1.0075, 0.972], ["DENTUSDT", 1500, 1.007, 0.972]]
+import json
+
+def print_config():
+    metas = [["AAVEUSDT", 0.2, 1.007, 0.972], ["KSMUSDT", 0.3, 1.007, 0.972], ["UNIUSDT", 1.0, 1.007, 0.972],
+             ["EGLDUSDT", 0.6, 1.01, 0.972], ["BNBUSDT", 0.03, 1.007, 0.972], ["SOLUSDT", 1, 1.01, 0.972],
+             ["DOTUSDT", 0.6, 1.007, 0.972], ["BTCUSDT", 0.001, 1.01, 0.972], ["YFIUSDT", 0.002, 1.007, 0.972],
+             ["ETHUSDT", 0.002, 1.007, 0.972], ["LTCUSDT", 0.03, 1.007, 0.972], ["BCHUSDT", 0.08, 1.007, 0.972],
+             ["MKRUSDT", 0.005, 1.007, 0.972], ["DASHUSDT", 0.09, 1.007, 0.972], ["ZECUSDT", 0.5, 1.007, 0.972],
+             ["ZENUSDT", 0.3, 1.007, 0.972], ["FILUSDT", 0.4, 1.007, 0.972], ["AVAXUSDT", 1, 1.007, 0.972],
+             ["LUNAUSDT", 2, 1.007, 0.972], ["YFIIUSDT", 0.003, 1.006, 0.972], ["COMPUSDT", 0.03, 1.007, 0.972],
+             ["XMRUSDT", 0.05, 1.007, 0.972], ["TRBUSDT", 0.5, 1.007, 0.972], ["NEOUSDT", 0.5, 1.007, 0.972],
+             ["NEARUSDT", 4.0, 1.007, 0.972], ["ATOMUSDT", 0.5, 1.007, 0.972], ["AXSUSDT", 2, 1.007, 0.972],
+             ["ICPUSDT", 0.6, 1.007, 0.972], ["WAVESUSDT", 0.6, 1.007, 0.972], ["LINKUSDT", 0.6, 1.007, 0.972],
+             ["BALUSDT", 0.6, 1.007, 0.972], ["HNTUSDT", 2, 1.007, 0.972], ["DYDXUSDT", 1.1, 1.007, 0.972],
+             ["ALICEUSDT", 1.2, 1.007, 0.972], ["SNXUSDT", 1.1, 1.007, 0.972], ["QTUMUSDT", 1.2, 1.007, 0.972],
+             ["RAYUSDT", 0.9, 1.007, 0.972], ["SUSHIUSDT", 3, 1.007, 0.972], ["OMGUSDT", 1.2, 1.007, 0.972],
+             ["MASKUSDT", 2, 1.007, 0.972], ["UNFIUSDT", 1.2, 1.007, 0.972], ["SRMUSDT", 3, 1.007, 0.972],
+             ["GTCUSDT", 1.5, 1.007, 0.97], ["RUNEUSDT", 3, 1.007, 0.972], ["BANDUSDT", 2, 1.007, 0.972],
+             ["XTZUSDT", 3, 1.007, 0.972], ["THETAUSDT", 3, 1.007, 0.972], ["KAVAUSDT", 3, 1.007, 0.972],
+             ["ARUSDT", 0.4, 1.007, 0.972], ["CELOUSDT", 2, 1.007, 0.972], ["RLCUSDT", 2.5, 1.007, 0.972],
+             ["LITUSDT", 2.5, 1.007, 0.972], ["C98USDT", 3, 1.007, 0.972], ["MTLUSDT", 3, 1.007, 0.972],
+             ["1INCHUSDT", 3, 1.007, 0.972], ["CRVUSDT", 7.1, 1.007, 0.972], ["SXPUSDT", 3.6, 1.007, 0.972],
+             ["AUDIOUSDT", 4, 1.007, 0.972], ["TOMOUSDT", 4, 1.007, 0.972], ["ADAUSDT", 4, 1.007, 0.972],
+             ["ICXUSDT", 4, 1.007, 0.972], ["BAKEUSDT", 4, 1.007, 0.972], ["BELUSDT", 4, 1.007, 0.972],
+             ["ALGOUSDT", 5, 1.007, 0.972], ["CTKUSDT", 8, 1.007, 0.972], ["KNCUSDT", 4, 1.007, 0.972],
+             ["ENJUSDT", 9, 1.007, 0.972], ["FTMUSDT", 9, 1.007, 0.972], ["DODOUSDT", 9.6, 1.007, 0.972],
+             ["MATICUSDT", 7, 1.007, 0.972], ["IOTAUSDT", 6.7, 1.007, 0.972], ["STORJUSDT", 8, 1.007, 0.972],
+             ["XRPUSDT", 9, 1.007, 0.972], ["RENUSDT", 9, 1.007, 0.972], ["SFPUSDT", 9, 1.007, 0.972],
+             ["ZRXUSDT", 10.3, 1.007, 0.972], ["ALPHAUSDT", 10, 1.007, 0.972], ["ATAUSDT", 10, 1.007, 0.972],
+             ["ONTUSDT", 9.5, 1.007, 0.972], ["OGNUSDT", 10, 1.007, 0.972], ["SANDUSDT", 10, 1.007, 0.972],
+             ["MANAUSDT", 12, 1.007, 0.972], ["GRTUSDT", 18, 1.007, 0.972], ["OCEANUSDT", 11, 1.007, 0.972],
+             ["BATUSDT", 12.4, 1.007, 0.972], ["CVCUSDT", 16, 1.007, 0.972], ["FLMUSDT", 16, 1.007, 0.972],
+             ["KEEPUSDT", 20, 1.007, 0.972], ["LRCUSDT", 26, 1.007, 0.972], ["HBARUSDT", 26, 1.007, 0.972],
+             ["CHRUSDT", 28, 1.007, 0.972], ["SKLUSDT", 29, 1.007, 0.972], ["NKNUSDT", 26, 1.007, 0.972],
+             ["XLMUSDT", 27, 1.007, 0.972], ["BZRXUSDT", 30, 1.007, 0.972], ["CHZUSDT", 45, 1.007, 0.972],
+             ["1000XECUSDT", 37, 1.007, 0.972], ["BLZUSDT", 68, 1.007, 0.972], ["DOGEUSDT", 34, 1.007, 0.972],
+             ["TLMUSDT", 40, 1.007, 0.972], ["ONEUSDT", 85, 1.007, 0.972], ["XEMUSDT", 56, 1.007, 0.972],
+             ["CELRUSDT", 64, 1.007, 0.972], ["VETUSDT", 147, 1.007, 0.972], ["RVNUSDT", 74, 1.007, 0.972],
+             ["GALAUSDT", 151, 1.007, 0.972], ["ZILUSDT", 92, 1.007, 0.972], ["TRXUSDT", 93, 1.007, 0.972],
+             ["ANKRUSDT", 99, 1.007, 0.972], ["IOSTUSDT", 161, 1.007, 0.972], ["DGBUSDT", 336, 1.007, 0.972],
+             ["RSRUSDT", 258, 1.007, 0.972], ["LINAUSDT", 187, 1.007, 0.972], ["BTSUSDT", 388, 1.007, 0.972],
+             ["STMXUSDT", 283, 1.007, 0.972], ["AKROUSDT", 459, 1.007, 0.972], ["SCUSDT", 925, 1.007, 0.972],
+             ["1000SHIBUSDT", 305, 1.0075, 0.972], ["DENTUSDT", 1500, 1.007, 0.972]]
     strategy_config = {
         "minute_1": [
             ["AAVEUSDT", 24, 10], ["KSMUSDT", 22, 2], ["UNIUSDT", 27, 42], ["EGLDUSDT", 25.5, 50],
@@ -330,3 +371,36 @@ if __name__ == '__main__':
         }
         config_map[symbol] = config
     print(config_map)
+
+
+def print_selected_symbol_metas():
+    with open(r'config.json') as config_file:
+        config_dict = json.load(config_file)
+
+    key = config_dict['trade']['exchange']['access_key']  # 币安API的key
+    secret = config_dict['trade']['exchange']['access_secret']  # 币安API的secret
+
+    dingding_token = config_dict['notify']['ding_talk_token']  # 钉钉webhook的access_token
+    wx_openid = config_dict['notify']['wechat_open_id']  # 关注简道斋后发送openid得到的那一串字符就是这个
+
+    tactics_flag = config_dict['notify']['tactics_flag']  # 机器人消息参数，1为钉钉确认策略计算是否正常，2为钉钉确认ws接收数据是否正常，
+    # 机器人消息参数  3为打印确认ws接收数据是否正常,4为打印确认策略计算是否正常。
+    add_pos_flag = config_dict['trade']['add_pos_flag']  # 加仓标识，为1开启，0关闭,加仓是当币在扛单中，再次遇到开仓信号就又开一次仓，这样会降低持仓均价，但爆仓风险更大
+    add_pos_amount = config_dict['trade']['add_pos_amount']  # 加仓次数，0不限次数，其他的整数值为最大加仓次数，每个币的次数一样，不单独设置
+
+    _strategy_config = config_dict['trade']['strategy']
+    _symbol_metas = _strategy_config['symbol_metas']
+    _symbols = _symbol_metas.keys()
+    if not _strategy_config['select_all_symbols']:
+        _symbols = _strategy_config['select_symbol_groups']['customized']
+
+    symbol_metas = {symbol: meta for symbol, meta in _symbol_metas.items() if symbol in _symbols}
+    print(symbol_metas)
+
+
+def zfill_numbers():
+    numbers = [str(i).zfill(2) for i in range(0, 60, 15)]
+    print(numbers)
+
+if __name__ == '__main__':
+    print_selected_symbol_metas()
