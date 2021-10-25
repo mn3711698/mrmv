@@ -1,4 +1,7 @@
 import json
+import time
+
+from apscheduler.schedulers.background import BlockingScheduler
 
 def print_config():
     metas = [["AAVEUSDT", 0.2, 1.007, 0.972], ["KSMUSDT", 0.3, 1.007, 0.972], ["UNIUSDT", 1.0, 1.007, 0.972],
@@ -402,5 +405,14 @@ def zfill_numbers():
     numbers = [str(i).zfill(2) for i in range(0, 60, 15)]
     print(numbers)
 
+
+def scheduler_test():
+    scheduler = BlockingScheduler()  # 定时的任务.
+    scheduler.add_job(lambda: print("2"), trigger='cron', id='TradeRunS1_1', second='2')  # 1min
+    scheduler.add_job(lambda: print("10"), trigger='cron', id='TradeRunSp', second='*/10')
+    scheduler.start()
+
+
 if __name__ == '__main__':
-    print_selected_symbol_metas()
+    scheduler_test()
+
