@@ -6,9 +6,11 @@ from getaway.binance_ws import BinanceDataWebsocket
 
 class Broker(object):
 
-    def __init__(self, engine: EventEngine, key=None, secret=None, symbols_list=None):
+    def __init__(self, engine: EventEngine, binance_http=None, key=None, secret=None, symbols_list=None):
         self.event_engine = engine
-        self.binance_http = BinanceFutureHttp(key=key, secret=secret)
+
+        if binance_http is None:
+            self.binance_http = BinanceFutureHttp(key=key, secret=secret)
 
         self.binance_data_ws = BinanceDataWebsocket(broker=self)
         self.binance_data_ws.subscribe(symbols_list)

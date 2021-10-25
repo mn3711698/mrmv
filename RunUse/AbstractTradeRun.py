@@ -5,6 +5,8 @@
 
 import time
 import traceback
+
+from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
 from utils.brokers import Broker
 from getaway.binance_http import BinanceFutureHttp
 from getaway.send_msg import bugcode, getToday, dingding
@@ -33,14 +35,18 @@ class AbstractTradeRun:
         self.key = key
         self.secret = secret
         self.engine = EventEngine()
-        self.broker = Broker(self.engine, self.key, secret=self.secret, symbols_list=self.symbols_list)
+
+        self.binance_http = RedisWrapperBinanceFutureHttp(redisc, self.key, self.secret)
+        self.broker = Broker(self.engine, binance_http=self.binance_http, key=self.key, secret=self.secret, symbols_list=self.symbols_list)
+
+        self.backup_binance_http = BinanceFutureHttp(key=self.key, secret=self.secret)
         self.initialization_data()
         self.broker.add_strategy(LineWith, self.symbols_dict, self.min_volume_dict, self.trading_size_dict)
 
     def conf_initialize(self, symbol_metas):
         # 初始化dict
         # [symbol, trading_size, win_arg, add_arg]
-        for symbol, meta in symbol_metas.item():
+        for symbol, meta in symbol_metas.items():
             self.symbols_list.append(symbol)
             self.symbols_dict[symbol] = [meta['win_arg'], meta['add_arg']]
             self.trading_size_dict[symbol] = meta['trading_size']
@@ -150,15 +156,20 @@ class AbstractTradeRun:
         exchange_interval = '4h'
         self.get_line('hour_4', bought, sold_bar, bought_bar, exchange_interval)
 
-    def get_kline_data(self, symbol, sold, bought, sold_bar, bought_bar, interval, contrast):
+    def get_kline_data(self, symbol, sold, bought, sold_bar, bought_bar, interval, contrast, backup=False):
+        if not backup:
+            binance_http = self.broker.binance_http
+        else:
+            binance_http = self.backup_binance_http
+
         try:
             if symbol in self.symbols_dict:
                 try:
-                    data = self.broker.binance_http.get_kline_interval(symbol=symbol, interval=interval, limit=100)
+                    data = binance_http.get_kline_interval(symbol=symbol, interval=interval, limit=100)
                 except Exception as e:
                     # self.bugcode(f"{symbol},{interval},get_kline_data:{e}")
                     # print(e)
-                    data = self.broker.binance_http.get_kline_interval(symbol=symbol, interval=interval, limit=100)
+                    data = binance_http.get_kline_interval(symbol=symbol, interval=interval, limit=100)
                 if isinstance(data, list):
                     if len(data):
                         kline_time = data[-1][0]
@@ -208,7 +219,12 @@ class AbstractTradeRun:
             sold = interval_config['sold']
             contrast = interval_config['contrast']
             flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
-            if not flag:
+            query_times = 0
+            while not flag:
+                if query_times > 10:
+                    self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast, True)
+                    break
+                query_times = query_times + 1
                 time.sleep(self.time_stop)
                 self.bugcode(f"get_line_1min:{symbol},{exchange_interval}")
                 flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
