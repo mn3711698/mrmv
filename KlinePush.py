@@ -90,11 +90,11 @@ def register_clean_redis_jobs():
     scheduler.add_job(clean_redis, id='clean_redis_4h', args=('4h', save_seconds), trigger='cron', hour='*/4')
     scheduler.add_job(clean_redis, id='clean_redis_2h', args=('2h', save_seconds), trigger='cron', hour='*/2')
     scheduler.add_job(clean_redis, id='clean_redis_1h', args=('1h', save_seconds), trigger='cron', hour='*/1')
-    scheduler.add_job(clean_redis, id='clean_redis_30m', args=('30m', save_seconds), trigger='cron', second='*/30')
-    scheduler.add_job(clean_redis, id='clean_redis_15m', args=('15m', save_seconds), trigger='cron', second='*/15')
-    scheduler.add_job(clean_redis, id='clean_redis_5m', args=('5m', save_seconds), trigger='cron', second='*/5')
-    scheduler.add_job(clean_redis, id='clean_redis_3m', args=('3m', save_seconds), trigger='cron', second='*/3')
-    scheduler.add_job(clean_redis, id='clean_redis_1m', args=('1m', save_seconds), trigger='cron', second='*/1')
+    scheduler.add_job(clean_redis, id='clean_redis_30m', args=('30m', save_seconds), trigger='cron', minute='*/30')
+    scheduler.add_job(clean_redis, id='clean_redis_15m', args=('15m', save_seconds), trigger='cron', minute='*/15')
+    scheduler.add_job(clean_redis, id='clean_redis_5m', args=('5m', save_seconds), trigger='cron', minute='*/5')
+    scheduler.add_job(clean_redis, id='clean_redis_3m', args=('3m', save_seconds), trigger='cron', minute='*/3')
+    scheduler.add_job(clean_redis, id='clean_redis_1m', args=('1m', save_seconds), trigger='cron', minute='*/1')
 
 
 def register_get_klines_loop_jobs():
