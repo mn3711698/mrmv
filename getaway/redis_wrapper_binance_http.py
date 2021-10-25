@@ -18,8 +18,10 @@ class RedisWrapperBinanceFutureHttp(BinanceFutureHttp):
         self.redisc = redisc
 
     def get_kline_interval(self, symbol, interval, start_time=None, end_time=None, limit=500, max_try_time=10):
-        return self.redisc.zrangebyscore(self.get_key_name(interval, symbol), start_time, end_time, num=limit)
+        return self.redisc.zrangebyscore(self.get_kline_key_name(interval, symbol), start_time, end_time, num=limit)
 
-    def get_key_name(self, interval: str, symbol: str):
+    def get_kline_key_name(self, interval: str, symbol: str):
         return str.join(':', [self.kline_redis_namespace, interval, symbol])
+
+
 
