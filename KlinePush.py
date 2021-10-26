@@ -3,7 +3,7 @@ import json
 import time
 from typing import List
 
-from config import redisc, timezone
+from config import redisc, timezone, clean_redis_klines, redis_klines_save_days
 from apscheduler.schedulers.background import BlockingScheduler
 from concurrent.futures.thread import ThreadPoolExecutor
 
@@ -80,21 +80,21 @@ def save_klines(interval: str, symbols: List[str], bar_count: int = 99):
     [future.result() for future in futures]
 
 
-def clean_redis(interval: str, save_seconds: int):
+def clean_redis(interval: str, save_days: int):
     for symbol in symbols:
         key = get_kline_key_name(interval, symbol)
-        redisc.zremrangebyscore(key, 0, timestamp() - (save_seconds * 1000))
+        redisc.zremrangebyscore(key, 0, timestamp() - (save_days * 1000 * 60 * 60 * 24))
 
 
-def register_clean_redis_jobs():
-    scheduler.add_job(clean_redis, id='clean_redis_4h', args=('4h', save_seconds), trigger='cron', hour='*/4')
-    scheduler.add_job(clean_redis, id='clean_redis_2h', args=('2h', save_seconds), trigger='cron', hour='*/2')
-    scheduler.add_job(clean_redis, id='clean_redis_1h', args=('1h', save_seconds), trigger='cron', hour='*')
-    scheduler.add_job(clean_redis, id='clean_redis_30m', args=('30m', save_seconds), trigger='cron', minute='*/30')
-    scheduler.add_job(clean_redis, id='clean_redis_15m', args=('15m', save_seconds), trigger='cron', minute='*/15')
-    scheduler.add_job(clean_redis, id='clean_redis_5m', args=('5m', save_seconds), trigger='cron', minute='*/5')
-    scheduler.add_job(clean_redis, id='clean_redis_3m', args=('3m', save_seconds), trigger='cron', minute='*/3')
-    scheduler.add_job(clean_redis, id='clean_redis_1m', args=('1m', save_seconds), trigger='cron', minute='*')
+def register_clean_redis_jobs(save_days: int):
+    scheduler.add_job(clean_redis, id='clean_redis_4h', args=('4h', save_days), trigger='cron', hour='*/4')
+    scheduler.add_job(clean_redis, id='clean_redis_2h', args=('2h', save_days), trigger='cron', hour='*/2')
+    scheduler.add_job(clean_redis, id='clean_redis_1h', args=('1h', save_days), trigger='cron', hour='*')
+    scheduler.add_job(clean_redis, id='clean_redis_30m', args=('30m', save_days), trigger='cron', minute='*/30')
+    scheduler.add_job(clean_redis, id='clean_redis_15m', args=('15m', save_days), trigger='cron', minute='*/15')
+    scheduler.add_job(clean_redis, id='clean_redis_5m', args=('5m', save_days), trigger='cron', minute='*/5')
+    scheduler.add_job(clean_redis, id='clean_redis_3m', args=('3m', save_days), trigger='cron', minute='*/3')
+    scheduler.add_job(clean_redis, id='clean_redis_1m', args=('1m', save_days), trigger='cron', minute='*')
 
 
 def register_get_klines_loop_jobs():
@@ -108,5 +108,6 @@ def timestamp():
 if __name__ == '__main__':
     init_redis()
     register_get_klines_loop_jobs()
-    register_clean_redis_jobs()
+    if clean_redis_klines:
+        register_clean_redis_jobs(redis_klines_save_days)
     scheduler.start()
