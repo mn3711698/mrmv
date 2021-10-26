@@ -5,6 +5,7 @@
 
 import time
 import traceback
+from typing import Dict
 
 from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
 from utils.brokers import Broker
@@ -13,7 +14,8 @@ from getaway.send_msg import bugcode, getToday, dingding
 from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
-from config import key, secret, redisc, kline_source
+from config import key, secret, redisc, kline_source, trade_klines_fetch_worker
+from concurrent.futures.thread import ThreadPoolExecutor
 
 
 class AbstractTradeRun:
@@ -221,21 +223,29 @@ class AbstractTradeRun:
             self.bugcode(traceback, "mrmv_TradeRun_get_position")
 
     def get_line(self, interval: str, bought: int, sold_bar: int, bought_bar: int, exchange_interval: str):
-        for symbol, interval_config_dict in self.symbol_interval_dict.items():
-            interval_config = interval_config_dict[interval]
-            sold = interval_config['sold']
-            contrast = interval_config['contrast']
-            flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
-            query_times = 0
-            while not flag:
-                if query_times > 10:
-                    self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast, True)
-                    break
-                query_times = query_times + 1
-                time.sleep(self.time_stop)
-                self.bugcode(f"get_line_1min:{symbol},{exchange_interval}")
-                flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
+        futures = []
+        with ThreadPoolExecutor(max_workers=trade_klines_fetch_worker) as tp:
+            for symbol, interval_config_dict in self.symbol_interval_dict.items():
+                interval_config = interval_config_dict[interval]
+                future = tp.submit(self.get_line0, symbol, interval_config,
+                                   bought, sold_bar, bought_bar, exchange_interval)
+                futures.append(future)
+        [future.result() for future in futures]
+
+    def get_line0(self, symbol: str, interval_config: Dict[str, int], bought: int, sold_bar: int, bought_bar: int, exchange_interval: str):
+        sold = interval_config['sold']
+        contrast = interval_config['contrast']
+        flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
+        query_times = 0
+        while not flag:
+            if query_times > 10:
+                self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast, True)
+                break
+            query_times = query_times + 1
             time.sleep(self.time_stop)
+            self.bugcode(f"get_line_1min:{symbol},{exchange_interval}")
+            flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
+        time.sleep(self.time_stop)
 
     @staticmethod
     def get_minute_numbers(step: int):

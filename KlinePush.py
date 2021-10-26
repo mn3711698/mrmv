@@ -3,7 +3,7 @@ import json
 import time
 from typing import List
 
-from config import redisc, timezone, clean_redis_klines, redis_klines_save_days
+from config import redisc, timezone, clean_redis_klines, redis_klines_save_days, redis_klines_web_fetch_worker
 from apscheduler.schedulers.background import BlockingScheduler
 from concurrent.futures.thread import ThreadPoolExecutor
 
@@ -23,7 +23,7 @@ fetch_order = ['4h', '2h', '1h', '30m', '15m', '5m', '3m', '1m']
 
 last_interval_time = {}
 
-max_workers = 10
+max_workers = redis_klines_web_fetch_worker
 kline_redis_namespace = 'mrmv:kline'
 save_seconds = 60 * 60 * 24 * 30
 
