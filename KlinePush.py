@@ -64,8 +64,12 @@ def get_and_save_klines(symbol: str, interval: str, bar_count: int):
     kline_score_mapping = {json.dumps(kline): kline[0] for kline in klines}
 
     with redisc.pipeline(transaction=True) as pipeline:
-        pipeline.zremrangebyscore(key, min(kline_score_mapping.values()), max(kline_score_mapping.values()))
+        start_time = min(kline_score_mapping.values())
+        end_time = max(kline_score_mapping.values())
+        pipeline.zremrangebyscore(key, start_time, end_time)
+        print(f'redis zremrangebyscore, key: {key}, start_time: {start_time}, end_time: {end_time}')
         pipeline.zadd(key, kline_score_mapping)
+        print(f'redis zadd, key: {key}, start_time: {start_time}, end_time: {end_time}')
         pipeline.execute()
 
     print(f'save {bar_count} klines success, symbol: {symbol}, interval: {interval}')
