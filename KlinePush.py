@@ -81,9 +81,11 @@ def save_klines(interval: str, symbols: List[str], bar_count: int = 99):
 
 
 def clean_redis(interval: str, save_days: int):
-    for symbol in symbols:
-        key = get_kline_key_name(interval, symbol)
-        redisc.zremrangebyscore(key, 0, timestamp() - (save_days * 1000 * 60 * 60 * 24))
+    with redisc.pipeline(transaction=False) as pipeline:
+        for symbol in symbols:
+            key = get_kline_key_name(interval, symbol)
+            pipeline.zremrangebyscore(key, 0, timestamp() - (save_days * 1000 * 60 * 60 * 24))
+        pipeline.execute()
 
 
 def register_clean_redis_jobs(save_days: int):
