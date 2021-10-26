@@ -1,13 +1,18 @@
 # -*- coding: utf-8 -*-
+import _thread
 import json
 import time
-from typing import List
+from collections import defaultdict
+from typing import List, Dict
 
+from KlineFetchWebSocketSubscriber import KlineFetchWebSocketSubscriber
+from KlineUtils import symbols, invoker, get_kline_key_name
 from config import redisc, timezone, clean_redis_klines, redis_klines_save_days, redis_klines_web_fetch_worker
 from apscheduler.schedulers.background import BlockingScheduler
 from concurrent.futures.thread import ThreadPoolExecutor
 
-from getaway.binance_http import BinanceFutureHttp
+max_workers = redis_klines_web_fetch_worker
+scheduler = BlockingScheduler(timezone=timezone)
 
 interval_millseconds_map = {
     '1m': 1000 * 60 * 1,
@@ -19,25 +24,21 @@ interval_millseconds_map = {
     '2h': 1000 * 60 * 60 * 2,
     '4h': 1000 * 60 * 60 * 4,
 }
-fetch_order = ['4h', '2h', '1h', '30m', '15m', '5m', '3m', '1m']
+fetch_order = [
+    '4h',
+    '2h',
+    '1h',
+    '30m',
+    '15m',
+    '5m',
+    '3m',
+    '1m'
+]
 
 last_interval_time = {}
 
-max_workers = redis_klines_web_fetch_worker
-kline_redis_namespace = 'mrmv:kline'
-save_seconds = 60 * 60 * 24 * 30
-
-scheduler = BlockingScheduler(timezone=timezone)
-
-invoker = BinanceFutureHttp()
-
-exchange_info = invoker.exchangeInfo()
-symbol_infos = exchange_info['symbols']
-symbols = [symbol_info['symbol'] for symbol_info in symbol_infos]
-
-
-def get_kline_key_name(interval: str, symbol: str):
-    return str.join(':', [kline_redis_namespace, interval, symbol])
+ws_url = 'wss://fstream.binance.com/ws'
+channel_count_per_ws = 100
 
 
 def fetch_klines_loop(bar_count: int = 99):
@@ -108,13 +109,41 @@ def register_get_klines_loop_jobs():
     scheduler.add_job(fetch_klines_loop, id='get_klines_loop', trigger='cron', second='2')
 
 
+def start_stream_update():
+    interval_symbols_maps = []
+    current_map = defaultdict(list)
+    map_channel_count = 0
+    for interval in interval_millseconds_map.keys():
+        for symbol in symbols:
+            if map_channel_count >= channel_count_per_ws:
+                current_map = defaultdict(list)
+                interval_symbols_maps.append(current_map)
+                map_channel_count = 0
+            current_map[interval].append(symbol)
+            map_channel_count = map_channel_count + 1
+    interval_symbols_maps.append(current_map)
+
+    subscribers = []
+    for interval_symbols_map in interval_symbols_maps:
+        subscriber = KlineFetchWebSocketSubscriber(ws_url, redisc, interval_symbols_map,
+                                                   on_restart=_stream_update_restart)
+        subscribers.append(subscriber)
+    for subscriber in subscribers:
+        _thread.start_new_thread(subscriber.start, ())
+
+
+def _stream_update_restart(interval_symbols_map: Dict[str, List[str]]):
+    for interval, symbols in interval_symbols_map.items():
+        save_klines(interval, symbols)
+
+
 def timestamp():
     return int(time.time() * 1000)
 
 
 if __name__ == '__main__':
     init_redis()
-    register_get_klines_loop_jobs()
+    start_stream_update()
     if clean_redis_klines:
         register_clean_redis_jobs(redis_klines_save_days)
     scheduler.start()
