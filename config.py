@@ -13,6 +13,9 @@ version_flag = '20211024'
 
 with open(r'config.json', encoding='utf-8') as config_file:
     config_dict = json.load(config_file)
+with open(r'symbol_metas.json', encoding='utf-8') as symbol_metas_file:
+    symbol_metas_dict = json.load(symbol_metas_file)
+    config_dict['trade']['strategy']['symbol_metas'] = symbol_metas_dict
 
 timezone = pytz.timezone(config_dict['system']['timezone'])
 key = config_dict['trade']['exchange']['access_key']  # 币安API的key
@@ -27,6 +30,12 @@ add_pos_flag = config_dict['trade']['add_pos_flag']  # 加仓标识，为1开启
 add_pos_amount = config_dict['trade']['add_pos_amount']  # 加仓次数，0不限次数，其他的整数值为最大加仓次数，每个币的次数一样，不单独设置
 
 kline_source = config_dict['trade']['kline_source']
+
+clean_redis_klines = config_dict['system']['clean_redis_klines']
+redis_klines_save_days = config_dict['system']['redis_klines_save_days']
+redis_klines_web_fetch_worker = config_dict['system']['redis_klines_web_fetch_worker']
+
+trade_klines_fetch_worker = config_dict['system']['redis_klines_web_fetch_worker']
 
 redis_config = config_dict['system']['redis']
 redis_pool = redis.ConnectionPool(host=redis_config['host'], port=redis_config['port'],
