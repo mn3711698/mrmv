@@ -26,6 +26,8 @@ tactics_flag = config_dict['notify']['tactics_flag']  # 机器人消息参数，
 add_pos_flag = config_dict['trade']['add_pos_flag']  # 加仓标识，为1开启，0关闭,加仓是当币在扛单中，再次遇到开仓信号就又开一次仓，这样会降低持仓均价，但爆仓风险更大
 add_pos_amount = config_dict['trade']['add_pos_amount']  # 加仓次数，0不限次数，其他的整数值为最大加仓次数，每个币的次数一样，不单独设置
 
+kline_source = config_dict['trade']['kline_source']
+
 redis_config = config_dict['system']['redis']
 redis_pool = redis.ConnectionPool(host=redis_config['host'], port=redis_config['port'],
                                   db=redis_config['db_index'], password=redis_config['password'])

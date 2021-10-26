@@ -13,7 +13,7 @@ from getaway.send_msg import bugcode, getToday, dingding
 from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
-from config import key, secret, redisc
+from config import key, secret, redisc, kline_source
 
 
 class AbstractTradeRun:
@@ -36,10 +36,17 @@ class AbstractTradeRun:
         self.secret = secret
         self.engine = EventEngine()
 
-        self.binance_http = RedisWrapperBinanceFutureHttp(redisc, self.key, self.secret)
-        self.broker = Broker(self.engine, binance_http=self.binance_http, key=self.key, secret=self.secret, symbols_list=self.symbols_list)
+        if kline_source == 'redis':
+            self.binance_http = RedisWrapperBinanceFutureHttp(redisc, self.key, self.secret)
+            self.broker = Broker(self.engine, binance_http=self.binance_http, key=self.key, secret=self.secret,
+                                 symbols_list=self.symbols_list)
+            self.backup_binance_http = BinanceFutureHttp(key=self.key, secret=self.secret)
 
-        self.backup_binance_http = BinanceFutureHttp(key=self.key, secret=self.secret)
+        elif kline_source == 'web':
+            self.broker = Broker(self.engine, key=self.key, secret=self.secret, symbols_list=self.symbols_list)
+            self.binance_http = self.broker.binance_http
+            self.backup_binance_http = self.binance_http
+
         self.initialization_data()
         self.broker.add_strategy(LineWith, self.symbols_dict, self.min_volume_dict, self.trading_size_dict)
 
