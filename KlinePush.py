@@ -25,7 +25,7 @@ last_interval_time = {}
 
 max_workers = 10
 kline_redis_namespace = 'mrmv:kline'
-save_seconds = 60 * 24 * 30
+save_seconds = 60 * 60 * 24 * 30
 
 scheduler = BlockingScheduler(timezone=timezone)
 
