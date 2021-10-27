@@ -25,7 +25,7 @@ class KlineFetchWebSocketSubscriber(object):
 
     def start(self):
         if self.with_start is not None:
-            _thread.start_new_thread(self.with_start, [self._interval_symbols_map])
+            _thread.start_new_thread(self.with_start, args=(self._interval_symbols_map,))
         self._ws.run_forever(ping_interval=15)
 
     def _restart(self):
