@@ -30,6 +30,7 @@
   },
   "system": {
     "timezone": "UTC",
+    "print_error": false,
     "clean_redis_klines": false,
     "redis_klines_save_days": 30,
     "redis_klines_web_fetch_worker": 10,

@@ -19,6 +19,8 @@ with open(r'symbol_metas.json', encoding='utf-8') as symbol_metas_file:
 
 config_raw = config_dict
 timezone = pytz.timezone(config_dict['system']['timezone'])
+print_error = config_dict['system']['print_error']
+
 key = config_dict['trade']['exchange']['access_key']  # 币安API的key
 secret = config_dict['trade']['exchange']['access_secret']  # 币安API的secret
 
