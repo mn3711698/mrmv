@@ -58,7 +58,7 @@ class AbstractTradeRun:
         for symbol, meta in symbol_metas.items():
             self.symbols_list.append(symbol)
             self.symbols_dict[symbol] = [meta['win_arg'], meta['add_arg']]
-            self.trading_size_dict[symbol] = meta['trading_size'] * trade_size_factor
+            self.trading_size_dict[symbol] = meta['trading_size'] * max(int(trade_size_factor), 1)
             self.symbol_interval_dict[symbol] = meta['interval']
 
     def initialization_data(self):
