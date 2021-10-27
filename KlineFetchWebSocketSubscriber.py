@@ -1,12 +1,13 @@
 import _thread
 import json
+from collections import defaultdict
+from threading import Lock
 from typing import List, Dict
 
 from websocket import WebSocketApp
 from redis import StrictRedis
 
-import config
-from KlineUtils import get_kline_key_name
+from KlineUtils import get_kline_key_name, timestamp
 
 
 class SubscriberSymbolsBody(object):
@@ -14,12 +15,23 @@ class SubscriberSymbolsBody(object):
         self.interval_symbols_map = interval_symbols_map
 
 
+class KlineBuffer(object):
+    def __init__(self, kline):
+        self.lock = Lock()
+        self.kline = kline
+        self.last_save_time = None
+
+
 class KlineFetchWebSocketSubscriber(object):
-    def __init__(self, host: str, redisc: StrictRedis, symbols_body: SubscriberSymbolsBody, with_start=None):
+    interval_symbol_kline_buffer_map: Dict[str, Dict[str, KlineBuffer]] = defaultdict(dict)
+
+    def __init__(self, host: str, redisc: StrictRedis, symbols_body: SubscriberSymbolsBody,
+                 with_start=None, save_buffer_millseconds: int = None):
         self.host = host
         self._ws = WebSocketApp(self.host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
                                 on_message=self._on_message)
         self.with_start = with_start
+        self.save_buffer_millseconds = save_buffer_millseconds
         self._symbols_body = symbols_body
         self._interval_symbols_map = self._symbols_body.interval_symbols_map
         self._redisc = redisc
@@ -28,6 +40,7 @@ class KlineFetchWebSocketSubscriber(object):
             for symbol in symbols:
                 subscribe_key = f'{symbol.lower()}@kline_{interval}'
                 self._subscribe_params.append(subscribe_key)
+                self.interval_symbol_kline_buffer_map[interval][symbol] = KlineBuffer(None)
 
     def start(self):
         if self.with_start is not None:
@@ -89,16 +102,42 @@ class KlineFetchWebSocketSubscriber(object):
           kline_info['n'],    # kline deal count
           kline_info['V'],    # kline positive deal count
           kline_info['Q'],    # kline positive deal amount
-          "0"
+          "0",
+          kline_time
         ]
 
+        if self.save_buffer_millseconds is not None and self.save_buffer_millseconds > 0:
+            kline_buffer = self.interval_symbol_kline_buffer_map[interval][symbol]
+            is_save_kline = False
+            save_kline = None
+            now = timestamp()
+            with kline_buffer.lock:
+                if kline_buffer.kline is None:
+                    kline_buffer.kline = kline
+                else:
+                    if kline[0] > kline_buffer.kline[6]:
+                        is_save_kline = True
+                    if kline_buffer.last_save_time is None \
+                            or kline_buffer.last_save_time + self.save_buffer_millseconds < now:
+                        is_save_kline = True
+                if is_save_kline:
+                    save_kline = kline_buffer.kline
+                    kline_buffer.kline = kline
+                    kline_buffer.last_save_time = now
+                else:
+                    if kline[0] == kline_buffer.kline[0] and kline[-1] > kline_buffer.kline[-1]:
+                        kline_buffer.kline = kline
+            if not is_save_kline:
+                return
+
+        save_kline = save_kline[:-1]
         insert_new_kline = True
         remove_old_kline = False
         compare_klines = self._redisc.zrangebyscore(key, kline_start_time, kline_start_time)
         if len(compare_klines) > 0:
             compare_kline = compare_klines[0]
             compare_kline_end_time = compare_kline[6]
-            if int(compare_kline_end_time) < int(kline[6]):
+            if int(compare_kline_end_time) < int(save_kline[6]):
                 remove_old_kline = True
             else:
                 insert_new_kline = False
@@ -106,16 +145,6 @@ class KlineFetchWebSocketSubscriber(object):
             if remove_old_kline:
                 pipeline.zremrangebyscore(key, kline_start_time, kline_time)
             if insert_new_kline:
-                pipeline.zadd(key, {json.dumps(kline): kline_start_time})
+                pipeline.zadd(key, {json.dumps(save_kline): kline_start_time})
             pipeline.execute()
-        print(f'{symbol}/{interval} kline: {kline} updated.')
-
-
-if __name__ == '__main__':
-    interval_symbols_map = {
-        '1m': ['BTCUSDT', 'ETHUSDT'],
-        '5m': ['EOSUSDT', 'SXPUSDT']
-    }
-    ws_url = 'wss://fstream.binance.com/ws'
-    subscriber = KlineFetchWebSocketSubscriber(ws_url, config.redisc, interval_symbols_map)
-    subscriber.start()
+        print(f'{symbol}/{interval} kline: {save_kline} updated.')

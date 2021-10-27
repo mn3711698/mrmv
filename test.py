@@ -1,5 +1,6 @@
 import json
 import time
+from collections import defaultdict
 
 from KlinePush import timestamp, interval_millseconds_map
 from config import redisc
@@ -426,5 +427,8 @@ def fetch_klines():
 
 
 if __name__ == '__main__':
-    fetch_klines()
+    map = {}
+    map['123'] = None
+    print(map['123'])
+    print(map['1234'])
 
