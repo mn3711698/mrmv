@@ -1,3 +1,4 @@
+import _thread
 import json
 from typing import List, Dict
 
@@ -9,10 +10,10 @@ from KlineUtils import get_kline_key_name
 
 
 class KlineFetchWebSocketSubscriber(object):
-    def __init__(self, host: str, redisc: StrictRedis, interval_symbols_map: Dict[str, List[str]], on_restart=None):
+    def __init__(self, host: str, redisc: StrictRedis, interval_symbols_map: Dict[str, List[str]], with_start=None):
         self._ws = WebSocketApp(host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
                                 on_message=self._on_message)
-        self.on_restart = on_restart
+        self.with_start = with_start
         self._interval_symbols_map = interval_symbols_map
         self._redisc = redisc
         self._subscribe_params = []
@@ -22,10 +23,11 @@ class KlineFetchWebSocketSubscriber(object):
                 self._subscribe_params.append(subscribe_key)
 
     def start(self):
+        if self.with_start is not None:
+            _thread.start_new_thread(self.with_start, [self._interval_symbols_map])
         self._ws.run_forever(ping_interval=15)
 
     def _restart(self):
-        self.on_restart(self._interval_symbols_map)
         self.start()
 
     def _on_open(self, ws: WebSocketApp):

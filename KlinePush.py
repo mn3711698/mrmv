@@ -40,6 +40,7 @@ last_interval_time = {}
 ws_url = 'wss://fstream.binance.com/ws'
 channel_count_per_ws = 100
 
+save_klines_thread_pool = ThreadPoolExecutor(max_workers=max_workers)
 
 def fetch_klines_loop(bar_count: int = 99):
     now = timestamp()
@@ -78,10 +79,9 @@ def get_and_save_klines(symbol: str, interval: str, bar_count: int):
 
 def save_klines(interval: str, symbols: List[str], bar_count: int = 99):
     futures = []
-    with ThreadPoolExecutor(max_workers=max_workers) as tp:
-        for symbol in symbols:
-            future = tp.submit(get_and_save_klines, symbol, interval, bar_count)
-            futures.append(future)
+    for symbol in symbols:
+        future = save_klines_thread_pool.submit(get_and_save_klines, symbol, interval, bar_count)
+        futures.append(future)
     [future.result() for future in futures]
 
 
@@ -116,8 +116,8 @@ def start_stream_update():
     for interval in interval_millseconds_map.keys():
         for symbol in symbols:
             if map_channel_count >= channel_count_per_ws:
-                current_map = defaultdict(list)
                 interval_symbols_maps.append(current_map)
+                current_map = defaultdict(list)
                 map_channel_count = 0
             current_map[interval].append(symbol)
             map_channel_count = map_channel_count + 1
@@ -126,13 +126,13 @@ def start_stream_update():
     subscribers = []
     for interval_symbols_map in interval_symbols_maps:
         subscriber = KlineFetchWebSocketSubscriber(ws_url, redisc, interval_symbols_map,
-                                                   on_restart=_stream_update_restart)
+                                                   with_start=_stream_update_with_start)
         subscribers.append(subscriber)
     for subscriber in subscribers:
         _thread.start_new_thread(subscriber.start, ())
 
 
-def _stream_update_restart(interval_symbols_map: Dict[str, List[str]]):
+def _stream_update_with_start(interval_symbols_map: Dict[str, List[str]]):
     for interval, symbols in interval_symbols_map.items():
         save_klines(interval, symbols)
 
@@ -142,7 +142,7 @@ def timestamp():
 
 
 if __name__ == '__main__':
-    init_redis()
+    # init_redis()
     start_stream_update()
     if clean_redis_klines:
         register_clean_redis_jobs(redis_klines_save_days)
