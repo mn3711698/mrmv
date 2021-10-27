@@ -116,8 +116,8 @@ def start_stream_update():
     for interval in interval_millseconds_map.keys():
         for symbol in symbols:
             if map_channel_count >= channel_count_per_ws:
-                current_map = defaultdict(list)
                 interval_symbols_maps.append(current_map)
+                current_map = defaultdict(list)
                 map_channel_count = 0
             current_map[interval].append(symbol)
             map_channel_count = map_channel_count + 1
