@@ -5,7 +5,7 @@ import time
 from collections import defaultdict
 from typing import List, Dict
 
-from KlineFetchWebSocketSubscriber import KlineFetchWebSocketSubscriber
+from KlineFetchWebSocketSubscriber import KlineFetchWebSocketSubscriber, SubscriberSymbolsBody
 from KlineUtils import symbols, invoker, get_kline_key_name
 from config import redisc, timezone, clean_redis_klines, redis_klines_save_days, redis_klines_web_fetch_worker
 from apscheduler.schedulers.background import BlockingScheduler
@@ -125,15 +125,16 @@ def start_stream_update():
 
     subscribers = []
     for interval_symbols_map in interval_symbols_maps:
-        subscriber = KlineFetchWebSocketSubscriber(ws_url, redisc, interval_symbols_map,
+        symbols_body = SubscriberSymbolsBody(interval_symbols_map)
+        subscriber = KlineFetchWebSocketSubscriber(ws_url, redisc, symbols_body,
                                                    with_start=_stream_update_with_start)
         subscribers.append(subscriber)
     for subscriber in subscribers:
         _thread.start_new_thread(subscriber.start, ())
 
 
-def _stream_update_with_start(interval_symbols_map: Dict[str, List[str]]):
-    for interval, symbols in interval_symbols_map.items():
+def _stream_update_with_start(symbols_body: SubscriberSymbolsBody):
+    for interval, symbols in symbols_body.interval_symbols_map.items():
         save_klines(interval, symbols)
 
 

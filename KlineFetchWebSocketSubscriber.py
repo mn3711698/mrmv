@@ -9,23 +9,29 @@ import config
 from KlineUtils import get_kline_key_name
 
 
+class SubscriberSymbolsBody(object):
+    def __init__(self, interval_symbols_map: Dict[str, List[str]]):
+        self.interval_symbols_map = interval_symbols_map
+
+
 class KlineFetchWebSocketSubscriber(object):
-    def __init__(self, host: str, redisc: StrictRedis, interval_symbols_map: Dict[str, List[str]], with_start=None):
+    def __init__(self, host: str, redisc: StrictRedis, symbols_body: SubscriberSymbolsBody, with_start=None):
         self.host = host
         self._ws = WebSocketApp(self.host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
                                 on_message=self._on_message)
         self.with_start = with_start
-        self._interval_symbols_map = interval_symbols_map
+        self._symbols_body = symbols_body
+        self._interval_symbols_map = self._symbols_body.interval_symbols_map
         self._redisc = redisc
         self._subscribe_params = []
-        for interval, symbols in interval_symbols_map.items():
+        for interval, symbols in self._interval_symbols_map.items():
             for symbol in symbols:
                 subscribe_key = f'{symbol.lower()}@kline_{interval}'
                 self._subscribe_params.append(subscribe_key)
 
     def start(self):
         if self.with_start is not None:
-            _thread.start_new_thread(self.with_start, args=(self._interval_symbols_map,))
+            _thread.start_new_thread(self.with_start, (self._symbols_body,))
         self._ws.run_forever(ping_interval=15)
 
     def _restart(self):
