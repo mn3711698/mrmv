@@ -26,7 +26,7 @@ class KlineFetchWebSocketSubscriber(object):
     interval_symbol_kline_buffer_map: Dict[str, Dict[str, KlineBuffer]] = defaultdict(dict)
 
     def __init__(self, host: str, redisc: StrictRedis, symbols_body: SubscriberSymbolsBody,
-                 with_start=None, save_buffer_millseconds: int = None):
+                 with_start=None, save_buffer_millseconds: int = 1000 * 10):
         self.host = host
         self._ws = WebSocketApp(self.host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
                                 on_message=self._on_message)
