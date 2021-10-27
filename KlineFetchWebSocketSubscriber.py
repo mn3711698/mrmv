@@ -106,10 +106,10 @@ class KlineFetchWebSocketSubscriber(object):
           kline_time
         ]
 
+        save_kline = kline
         if self.save_buffer_millseconds is not None and self.save_buffer_millseconds > 0:
             kline_buffer = self.interval_symbol_kline_buffer_map[interval][symbol]
             is_save_kline = False
-            save_kline = None
             now = timestamp()
             with kline_buffer.lock:
                 if kline_buffer.kline is None:
@@ -130,10 +130,10 @@ class KlineFetchWebSocketSubscriber(object):
             if not is_save_kline:
                 return
 
-        save_kline = save_kline[:-1]
+        # save_kline = save_kline[:-1]
         insert_new_kline = True
         remove_old_kline = False
-        compare_klines = self._redisc.zrangebyscore(key, kline_start_time, kline_start_time)
+        compare_klines = self._redisc.zrangebyscore(key, save_kline[0], save_kline[0])
         if len(compare_klines) > 0:
             compare_kline = compare_klines[0]
             compare_kline_end_time = compare_kline[6]
@@ -143,8 +143,9 @@ class KlineFetchWebSocketSubscriber(object):
                 insert_new_kline = False
         with self._redisc.pipeline(transaction=True) as pipeline:
             if remove_old_kline:
-                pipeline.zremrangebyscore(key, kline_start_time, kline_time)
+                pipeline.zremrangebyscore(key, save_kline[0], save_kline[-1])
             if insert_new_kline:
-                pipeline.zadd(key, {json.dumps(save_kline): kline_start_time})
+                # this kline include a last value(event time), sep it to normalize
+                pipeline.zadd(key, {json.dumps(save_kline[:-1]): save_kline[0]})
             pipeline.execute()
         print(f'{symbol}/{interval} kline: {save_kline} updated.')

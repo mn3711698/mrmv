@@ -59,9 +59,7 @@ def get_and_save_klines(symbol: str, interval: str, bar_count: int):
         start_time = min(kline_score_mapping.values())
         end_time = max(kline_score_mapping.values())
         pipeline.zremrangebyscore(key, start_time, end_time)
-        print(f'redis zremrangebyscore, key: {key}, start_time: {start_time}, end_time: {end_time}')
         pipeline.zadd(key, kline_score_mapping)
-        print(f'redis zadd, key: {key}, start_time: {start_time}, end_time: {end_time}')
         pipeline.execute()
 
     print(f'save {bar_count} klines success, symbol: {symbol}, interval: {interval}')
@@ -104,7 +102,8 @@ def start_stream_update():
     current_map = defaultdict(list)
     map_channel_count = 0
     for interval in interval_millseconds_map.keys():
-        for symbol in symbols:
+        for symbol in ['1000SHIBUSDT']:
+        # for symbol in symbols:
             if map_channel_count >= channel_count_per_ws:
                 interval_symbols_maps.append(current_map)
                 current_map = defaultdict(list)
@@ -117,7 +116,7 @@ def start_stream_update():
     for interval_symbols_map in interval_symbols_maps:
         symbols_body = SubscriberSymbolsBody(interval_symbols_map)
         subscriber = KlineFetchWebSocketSubscriber(ws_url, redisc, symbols_body,
-                                                   with_start=_stream_update_with_start)
+                                                   with_start=_stream_update_with_start, save_buffer_millseconds=-1)
         subscribers.append(subscriber)
     for subscriber in subscribers:
         _thread.start_new_thread(subscriber.start, ())
