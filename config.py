@@ -17,6 +17,7 @@ with open(r'symbol_metas.json', encoding='utf-8') as symbol_metas_file:
     symbol_metas_dict = json.load(symbol_metas_file)
     config_dict['trade']['strategy']['symbol_metas'] = symbol_metas_dict
 
+config_raw = config_dict
 timezone = pytz.timezone(config_dict['system']['timezone'])
 key = config_dict['trade']['exchange']['access_key']  # 币安API的key
 secret = config_dict['trade']['exchange']['access_secret']  # 币安API的secret
@@ -24,6 +25,7 @@ secret = config_dict['trade']['exchange']['access_secret']  # 币安API的secret
 dingding_token = config_dict['notify']['ding_talk_token']  # 钉钉webhook的access_token
 wx_openid = config_dict['notify']['wechat_open_id']  # 关注简道斋后发送openid得到的那一串字符就是这个
 
+trade_size_factor = config_dict['trade']['trade_size_factor']
 tactics_flag = config_dict['notify']['tactics_flag']  # 机器人消息参数，1为钉钉确认策略计算是否正常，2为钉钉确认ws接收数据是否正常，
 # 机器人消息参数  3为打印确认ws接收数据是否正常,4为打印确认策略计算是否正常。
 add_pos_flag = config_dict['trade']['add_pos_flag']  # 加仓标识，为1开启，0关闭,加仓是当币在扛单中，再次遇到开仓信号就又开一次仓，这样会降低持仓均价，但爆仓风险更大

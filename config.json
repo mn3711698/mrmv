@@ -1,5 +1,6 @@
 {
   "trade": {
+    "trade_size_factor": 1,
     "exchange": {
       "access_key": "",
       "access_secret": ""
