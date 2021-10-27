@@ -11,7 +11,8 @@ from KlineUtils import get_kline_key_name
 
 class KlineFetchWebSocketSubscriber(object):
     def __init__(self, host: str, redisc: StrictRedis, interval_symbols_map: Dict[str, List[str]], with_start=None):
-        self._ws = WebSocketApp(host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
+        self.host = host
+        self._ws = WebSocketApp(self.host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
                                 on_message=self._on_message)
         self.with_start = with_start
         self._interval_symbols_map = interval_symbols_map
@@ -46,6 +47,8 @@ class KlineFetchWebSocketSubscriber(object):
     def _on_error(self, ws: WebSocketApp, error):
         print(f'subscriber: {self._subscribe_params} error occured: {error}, restart.')
         ws.close()
+        self._ws = WebSocketApp(self.host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
+                                on_message=self._on_message)
         self._restart()
 
     def _on_message(self, ws: WebSocketApp, message):
