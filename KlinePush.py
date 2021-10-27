@@ -6,23 +6,13 @@ from typing import List
 
 from KlineFetchWebSocketSubscriber import KlineFetchWebSocketSubscriber, SubscriberSymbolsBody
 from KlineUtils import symbols, invoker, get_kline_key_name, interval_millseconds_map, timestamp
-from config import redisc, timezone, clean_redis_klines, redis_klines_save_days, redis_klines_web_fetch_worker
+from config import redisc, timezone, clean_redis_klines, redis_klines_save_days, redis_klines_web_fetch_worker, \
+    save_buffer_millseconds
 from apscheduler.schedulers.background import BlockingScheduler
 from concurrent.futures.thread import ThreadPoolExecutor
 
 max_workers = redis_klines_web_fetch_worker
 scheduler = BlockingScheduler(timezone=timezone)
-
-fetch_order = [
-    '4h',
-    '2h',
-    '1h',
-    '30m',
-    '15m',
-    '5m',
-    '3m',
-    '1m'
-]
 
 last_interval_time = {}
 
@@ -30,20 +20,6 @@ ws_url = 'wss://fstream.binance.com/ws'
 channel_count_per_ws = 100
 
 save_klines_thread_pool = ThreadPoolExecutor(max_workers=max_workers)
-
-def fetch_klines_loop(bar_count: int = 99):
-    now = timestamp()
-    for interval in fetch_order:
-        period_millseconds = interval_millseconds_map[interval]
-        if last_interval_time[interval] + period_millseconds <= now:
-            save_klines(interval, symbols, bar_count)
-
-
-def init_redis(bar_count: int = 99):
-    print('redis initing...')
-    for interval in fetch_order:
-        save_klines(interval, symbols, bar_count)
-    print('redis inited.')
 
 
 def get_and_save_klines(symbol: str, interval: str, bar_count: int):
@@ -92,10 +68,6 @@ def register_clean_redis_jobs(save_days: int):
     scheduler.add_job(clean_redis, id='clean_redis_1m', args=('1m', save_days), trigger='cron', minute='*')
 
 
-def register_get_klines_loop_jobs():
-    scheduler.add_job(fetch_klines_loop, id='get_klines_loop', trigger='cron', second='2')
-
-
 def start_stream_update():
     interval_symbols_maps = []
     current_map = defaultdict(list)
@@ -114,7 +86,8 @@ def start_stream_update():
     for interval_symbols_map in interval_symbols_maps:
         symbols_body = SubscriberSymbolsBody(interval_symbols_map)
         subscriber = KlineFetchWebSocketSubscriber(ws_url, redisc, symbols_body,
-                                                   with_start=_stream_update_with_start, save_buffer_millseconds=5000)
+                                                   with_start=_stream_update_with_start,
+                                                   save_buffer_millseconds=save_buffer_millseconds)
         subscribers.append(subscriber)
     for subscriber in subscribers:
         _thread.start_new_thread(subscriber.start, ())

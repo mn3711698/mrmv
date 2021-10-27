@@ -36,6 +36,7 @@ redis_klines_save_days = config_dict['system']['redis_klines_save_days']
 redis_klines_web_fetch_worker = config_dict['system']['redis_klines_web_fetch_worker']
 
 trade_klines_fetch_worker = config_dict['system']['redis_klines_web_fetch_worker']
+save_buffer_millseconds = config_dict['system']['save_buffer_millseconds']
 
 redis_config = config_dict['system']['redis']
 redis_pool = redis.ConnectionPool(host=redis_config['host'], port=redis_config['port'],
