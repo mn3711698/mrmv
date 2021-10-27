@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import _thread
 import json
-import time
 from collections import defaultdict
 from typing import List
 
@@ -102,8 +101,7 @@ def start_stream_update():
     current_map = defaultdict(list)
     map_channel_count = 0
     for interval in interval_millseconds_map.keys():
-        for symbol in ['1000SHIBUSDT']:
-        # for symbol in symbols:
+        for symbol in symbols:
             if map_channel_count >= channel_count_per_ws:
                 interval_symbols_maps.append(current_map)
                 current_map = defaultdict(list)
@@ -128,7 +126,6 @@ def _stream_update_with_start(symbols_body: SubscriberSymbolsBody):
 
 
 if __name__ == '__main__':
-    # init_redis()
     start_stream_update()
     if clean_redis_klines:
         register_clean_redis_jobs(redis_klines_save_days)
