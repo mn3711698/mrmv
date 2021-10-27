@@ -1,5 +1,6 @@
 {
   "trade": {
+    "trade_size_factor": 1,
     "exchange": {
       "access_key": "",
       "access_secret": ""
@@ -32,6 +33,7 @@
     "clean_redis_klines": false,
     "redis_klines_save_days": 30,
     "redis_klines_web_fetch_worker": 10,
+    "save_buffer_millseconds": 200000,
     "redis": {
       "host": "127.0.0.1",
       "port": 6379,

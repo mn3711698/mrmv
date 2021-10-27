@@ -14,7 +14,7 @@ from getaway.send_msg import bugcode, getToday, dingding
 from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
-from config import key, secret, redisc, kline_source, trade_klines_fetch_worker
+from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor
 from concurrent.futures.thread import ThreadPoolExecutor
 
 
@@ -58,7 +58,7 @@ class AbstractTradeRun:
         for symbol, meta in symbol_metas.items():
             self.symbols_list.append(symbol)
             self.symbols_dict[symbol] = [meta['win_arg'], meta['add_arg']]
-            self.trading_size_dict[symbol] = meta['trading_size']
+            self.trading_size_dict[symbol] = meta['trading_size'] * trade_size_factor
             self.symbol_interval_dict[symbol] = meta['interval']
 
     def initialization_data(self):

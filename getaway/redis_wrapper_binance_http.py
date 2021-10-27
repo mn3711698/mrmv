@@ -3,6 +3,7 @@
 ##############################################################################
 # Author：QQ173782910
 ##############################################################################
+import json
 
 from redis import StrictRedis
 
@@ -36,4 +37,5 @@ class RedisWrapperBinanceFutureHttp(BinanceFutureHttp):
         elif start_time is not None and end_time is not None:
             _b_klines = self.redisc.zrangebyscore(get_kline_key_name(interval, symbol), end_time, start_time,
                                                   start=0, num=limit)
-        return list(_b_klines)
+        _klines = [json.loads(str(_b_kline, encoding='utf-8')) for _b_kline in _b_klines]
+        return _klines
