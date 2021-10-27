@@ -11,6 +11,8 @@ class Broker(object):
 
         if binance_http is None:
             self.binance_http = BinanceFutureHttp(key=key, secret=secret)
+        else:
+            self.binance_http = binance_http
 
         self.binance_data_ws = BinanceDataWebsocket(broker=self)
         self.binance_data_ws.subscribe(symbols_list)
