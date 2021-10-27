@@ -114,7 +114,7 @@ def start_stream_update():
     for interval_symbols_map in interval_symbols_maps:
         symbols_body = SubscriberSymbolsBody(interval_symbols_map)
         subscriber = KlineFetchWebSocketSubscriber(ws_url, redisc, symbols_body,
-                                                   with_start=_stream_update_with_start, save_buffer_millseconds=-1)
+                                                   with_start=_stream_update_with_start, save_buffer_millseconds=5000)
         subscribers.append(subscriber)
     for subscriber in subscribers:
         _thread.start_new_thread(subscriber.start, ())
