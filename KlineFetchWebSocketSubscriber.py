@@ -30,7 +30,7 @@ class KlineFetchWebSocketSubscriber(object):
         self.host = host
         self._ws = WebSocketApp(self.host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
                                 on_message=self._on_message)
-        self.with_start = with_start
+        self._with_start = with_start
         self.save_buffer_millseconds = save_buffer_millseconds
         self._symbols_body = symbols_body
         self._interval_symbols_map = self._symbols_body.interval_symbols_map
@@ -42,9 +42,15 @@ class KlineFetchWebSocketSubscriber(object):
                 self._subscribe_params.append(subscribe_key)
                 self.interval_symbol_kline_buffer_map[interval][symbol] = KlineBuffer(None)
 
+    def _with_start0(self):
+        if self._with_start is not None:
+            try:
+                self._with_start(self._symbols_body)
+            except Exception as e:
+                self._on_error(self._ws, e)
+
     def start(self):
-        if self.with_start is not None:
-            _thread.start_new_thread(self.with_start, (self._symbols_body,))
+        _thread.start_new_thread(self._with_start0, ())
         self._ws.run_forever(ping_interval=15)
 
     def _restart(self):
@@ -65,7 +71,10 @@ class KlineFetchWebSocketSubscriber(object):
 
     def _on_error(self, ws: WebSocketApp, error):
         print(f'subscriber: {self._subscribe_params} error occured: {error}, restart.')
-        ws.close()
+        try:
+            ws.close()
+        except Exception as e:
+            print(f'close websocket error, {e}')
         self._ws = WebSocketApp(self.host, on_open=self._on_open, on_close=self._on_close, on_error=self._on_error,
                                 on_message=self._on_message)
         self._restart()
