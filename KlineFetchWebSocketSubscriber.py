@@ -80,16 +80,20 @@ class KlineFetchWebSocketSubscriber(object):
         self._restart()
 
     def _on_message(self, ws: WebSocketApp, message):
+        fire_message = False
         try:
             body = None
             if type(message) is str:
                 body = json.loads(message)
             if type(body) is not dict:
-                return
+                fire_message = True
         except Exception as e:
             print(f'message: {message} load failed: {e}, return')
             return
         if 'e' not in body or 'kline' != body['e']:
+            fire_message = True
+        if fire_message:
+            print(f'kline webSocket message not match, fire. message: {message}')
             return
         symbol = body['s']
         kline_time = body['E']
