@@ -3,7 +3,7 @@ import requests
 import traceback
 import time
 import json
-from config import dingding_token, wx_openid
+from config import dingding_token, wx_openid, print_error
 
 
 def dingding(msg, symbols):
@@ -65,6 +65,8 @@ def bugcode(tracebacks, ctype='ok'):
         errInf = str(tracebacks.format_exc())
     else:
         errInf = tracebacks
+    if print_error:
+        print(errInf)
 
     gUrl = 'https://link.yjyzj.cn/api'
     pdata = {'viewid': 'home', 'part': 'collect',
