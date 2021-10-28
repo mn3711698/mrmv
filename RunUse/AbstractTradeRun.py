@@ -5,6 +5,7 @@
 
 import time
 import traceback
+from decimal import Decimal
 from typing import Dict
 
 from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
@@ -58,8 +59,17 @@ class AbstractTradeRun:
         for symbol, meta in symbol_metas.items():
             self.symbols_list.append(symbol)
             self.symbols_dict[symbol] = [meta['win_arg'], meta['add_arg']]
-            self.trading_size_dict[symbol] = meta['trading_size'] * max(int(trade_size_factor), 1)
             self.symbol_interval_dict[symbol] = meta['interval']
+
+            config_trading_size = meta['trading_size']
+            precision = self.calculate_precision(config_trading_size)
+            trading_size = Decimal(str(config_trading_size)) * Decimal(trade_size_factor)
+            if precision > 0:
+                quantize_format = '0.' + int(precision) * '0'
+                trading_size = trading_size.quantize(Decimal(quantize_format))
+            trading_size = float(trading_size)
+
+            self.trading_size_dict[symbol] = trading_size
 
     def initialization_data(self):
         try:
@@ -246,6 +256,15 @@ class AbstractTradeRun:
             self.bugcode(f"get_line_1min:{symbol},{exchange_interval}")
             flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
         time.sleep(self.time_stop)
+
+    @staticmethod
+    def calculate_precision(number):
+        number_str = str(number)
+        if number_str.__contains__('.'):
+            precision = len(number_str) - number_str.index('.') - 1
+        else:
+            precision = 0
+        return precision
 
     @staticmethod
     def get_minute_numbers(step: int):

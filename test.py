@@ -1,6 +1,7 @@
 import json
 import time
 from collections import defaultdict
+from decimal import Decimal
 
 from KlinePush import timestamp, interval_millseconds_map
 from config import redisc
@@ -427,8 +428,12 @@ def fetch_klines():
 
 
 if __name__ == '__main__':
-    map = {}
-    map['123'] = None
-    print(map['123'])
-    print(map['1234'])
+    trading_size = -216.123
+    trading_size_str = str(trading_size)
+    if trading_size_str.__contains__('.'):
+        precision = len(trading_size_str) - trading_size_str.index('.') - 1
+    else:
+        precision = 0
+    format = Decimal('0.' + precision * '0')
+    print(float(Decimal('0.124535345').quantize(format)))
 
