@@ -4,11 +4,15 @@
 # Author：QQ173782910
 ##############################################################################
 import json
-
 from redis import StrictRedis
-
-from KlinePush import get_kline_key_name
 from getaway.binance_http import BinanceFutureHttp
+
+
+kline_redis_namespace = 'mrmv:kline'
+
+
+def get_kline_key_name(interval: str, symbol: str):
+    return str.join(':', [kline_redis_namespace, interval, symbol])
 
 
 class RedisWrapperBinanceFutureHttp(BinanceFutureHttp):

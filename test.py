@@ -3,7 +3,6 @@ import time
 from collections import defaultdict
 from decimal import Decimal
 
-from KlinePush import timestamp, interval_millseconds_map
 from config import redisc
 
 from apscheduler.schedulers.background import BlockingScheduler

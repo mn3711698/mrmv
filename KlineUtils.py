@@ -17,7 +17,6 @@ interval_millseconds_map = {
 }
 
 invoker = BinanceFutureHttp()
-
 exchange_info = invoker.exchangeInfo()
 symbol_infos = exchange_info['symbols']
 symbols = [symbol_info['symbol'] for symbol_info in symbol_infos]
