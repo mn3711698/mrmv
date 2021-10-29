@@ -3,8 +3,6 @@ import time
 from getaway.binance_http import BinanceFutureHttp
 
 
-kline_redis_namespace = 'mrmv:kline'
-
 interval_millseconds_map = {
     '1m': 1000 * 60 * 1,
     '3m': 1000 * 60 * 3,
@@ -22,8 +20,8 @@ symbol_infos = exchange_info['symbols']
 symbols = [symbol_info['symbol'] for symbol_info in symbol_infos]
 
 
-def get_kline_key_name(interval: str, symbol: str):
-    return str.join(':', [kline_redis_namespace, interval, symbol])
+def get_kline_key_name(namespace: str, interval: str, symbol: str):
+    return str.join(':', [namespace, interval, symbol])
 
 
 def timestamp():

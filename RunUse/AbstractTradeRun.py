@@ -15,7 +15,7 @@ from getaway.send_msg import bugcode, getToday, dingding
 from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
-from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor
+from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace
 from concurrent.futures.thread import ThreadPoolExecutor
 
 
@@ -37,10 +37,11 @@ class AbstractTradeRun:
         self.time_stop = 2
         self.key = key
         self.secret = secret
+
         self.engine = EventEngine()
 
         if kline_source == 'redis':
-            self.binance_http = RedisWrapperBinanceFutureHttp(redisc, self.key, self.secret)
+            self.binance_http = RedisWrapperBinanceFutureHttp(redisc, redis_namespace, self.key, self.secret)
             self.broker = Broker(self.engine, binance_http=self.binance_http, key=self.key, secret=self.secret,
                                  symbols_list=self.symbols_list)
             self.backup_binance_http = BinanceFutureHttp(key=self.key, secret=self.secret)
@@ -242,7 +243,8 @@ class AbstractTradeRun:
                 futures.append(future)
         [future.result() for future in futures]
 
-    def get_line0(self, symbol: str, interval_config: Dict[str, int], bought: int, sold_bar: int, bought_bar: int, exchange_interval: str):
+    def get_line0(self, symbol: str, interval_config: Dict[str, int], bought: int, sold_bar: int, bought_bar: int,
+                  exchange_interval: str):
         sold = interval_config['sold']
         contrast = interval_config['contrast']
         flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
