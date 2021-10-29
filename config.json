@@ -33,7 +33,6 @@
     "timezone": "UTC",
     "print_error": false,
     "redis_klines_web_fetch_worker": 10,
-    "save_buffer_millseconds": 20000,
     "redis": {
       "host": "127.0.0.1",
       "port": 6379,
