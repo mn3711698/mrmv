@@ -24,7 +24,9 @@
   },
   "notify": {
     "ding_talk_token": "",
+    "@ding_talk_token": "ding_talk_token是钉钉webhook的access_token",
     "wechat_open_id": "",
+    "@wechat_open_id": "wechat_open_id是关注公从号'简道斋'后发送openid得到的那一串字符就是这个",
     "tactics_flag": 0,
     "@tactics_flag": "机器人消息参数，1为钉钉确认策略计算是否正常，2为钉钉确认ws接收数据是否正常，3为打印确认ws接收数据是否正常,4为打印确认策略计算是否正常。"
   },
