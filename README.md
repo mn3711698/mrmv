@@ -124,6 +124,7 @@ zecusdt
 # 更新日志
 
 
+2021-10-29  参数pr，将其他的TradeRun去掉，保留AbstractTradeRun
 
 2021-10-24  初始始上传
 
