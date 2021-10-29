@@ -6,7 +6,6 @@
       "access_secret": ""
     },
     "kline_source": "web",
-    "kline_fetch_worker": 2,
     "add_pos_flag": 0,
     "@add_pos_flag": "加仓标识，为1开启，0关闭,加仓是当币在扛单中，再次遇到开仓信号就又开一次仓，这样会降低持仓均价，但爆仓风险更大",
     "add_pos_amount": 0,
@@ -33,8 +32,6 @@
   "system": {
     "timezone": "UTC",
     "print_error": false,
-    "clean_redis_klines": false,
-    "redis_klines_save_days": 30,
     "redis_klines_web_fetch_worker": 10,
     "save_buffer_millseconds": 20000,
     "redis": {
