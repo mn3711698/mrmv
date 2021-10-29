@@ -33,6 +33,7 @@
     "timezone": "UTC",
     "print_error": false,
     "redis_klines_web_fetch_worker": 10,
+    "redis_klines_namespace": "mrmv:kline",
     "redis": {
       "host": "127.0.0.1",
       "port": 6379,
