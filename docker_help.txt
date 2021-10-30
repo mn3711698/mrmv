@@ -1,0 +1,52 @@
+先在 https://docs.docker.com/engine/install/ 找到自己开发机对应的系统, 然后根据说明安装docker engine
+如果能安装Docker Desktop则更方便.
+
+然后在 https://docs.docker.com/engine/install/ 找到自己服务器对应的系统, 然后根据说明安装docker engine
+在 https://hub.docker.com/ 注册一个账号用来保存自己的docker镜像
+
+
+此部分内容, 需要构建自己镜像的人才需要看, 如果想直接运行策略, 则看下部分内容
+=========================================================================================================
+
+
+在工程根目录构建docker镜像, 命令: docker build -t <docker-hub 用户名>/<镜像名称>:<镜像版本号> . --no-cache
+构建完之后推送到 docker hub, 命令: docker push <docker-hub 用户名>/<镜像名称>:<镜像版本号>
+
+这时就能在服务器运行策略了, 先准备好配置文件config.json, 然后运行命令:
+docker run -d -v <config-dir>/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> <docker-hub 用户名>/<镜像名称>:<镜像版本号> /usr/bin/python3 Runner.py
+也可以在最后再加上币对组名(config::trade.strategy.select_symbol_groups下的某个key) 设置需要交易的币对列表
+如果需要交易策略支持的所有币对就设置 select_all_symbols = true 就行
+
+多策略的运行方法:
+假设有4个策略需要在服务器上运行, 那么配置4个文件, 随便放在哪儿
+/opt/mrmv-trade/config1.json
+/opt/mrmv-trade/config2.json
+/opt/mrmv-trade/config3.json
+/opt/mrmv-trade-extra/config.json
+
+则运行以下命令即可:
+docker run -d -v /opt/mrmv-trade/config1.json:/var/games/mrmv/config.json --restart=always --name <策略名> <docker-hub 用户名>/<镜像名称>:<镜像版本号> /usr/bin/python3 Runner.py
+docker run -d -v /opt/mrmv-trade/config2.json:/var/games/mrmv/config.json --restart=always --name <策略名> <docker-hub 用户名>/<镜像名称>:<镜像版本号> /usr/bin/python3 Runner.py
+docker run -d -v /opt/mrmv-trade/config3.json:/var/games/mrmv/config.json --restart=always --name <策略名> <docker-hub 用户名>/<镜像名称>:<镜像版本号> /usr/bin/python3 Runner.py
+docker run -d -v /opt/mrmv-trade-extra/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> <docker-hub 用户名>/<镜像名称>:<镜像版本号> /usr/bin/python3 Runner.py
+
+
+docker ps可以查看启动的策略
+docker ps -a 可以查看包含已关闭的策略
+有一串hash码代表策略的唯一标识
+docker中运行的策略如果崩溃会自动重新启动.
+如果要关闭就 docker stop <策略的唯一标识> 即可停止
+docker restart <策略的唯一标识> 可以重新启动
+docker rm <策略的唯一标识> 可以删除策略, 但是必须先停止
+
+
+=========================================================================================================
+
+
+现在附上即时可用的镜像提供给不需要自己构建镜像的人使用, 记住先要提供自己的config.json, 也需要自己改动配置文件的路径:
+
+默认币种:
+docker run -d -v <config-dir>/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> flamhaze5946/flamhaze-mrmv-trade:20211029.1.0.0 /usr/bin/python3 Runner.py
+
+预设币种:
+docker run -d -v <config-dir>/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> flamhaze5946/flamhaze-mrmv-trade:20211029.1.0.0 /usr/bin/python3 Runner.py @select_symbols_1
