@@ -6,8 +6,9 @@
 import time
 import traceback
 from decimal import Decimal
-from typing import Dict
+from typing import Dict, List
 
+from RunUse.model.symbol_position import SymbolPosition
 from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
 from utils.brokers import Broker
 from getaway.binance_http import BinanceFutureHttp
@@ -15,7 +16,8 @@ from getaway.send_msg import bugcode, getToday, dingding
 from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
-from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace
+from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace, \
+    record_trade
 from concurrent.futures.thread import ThreadPoolExecutor
 
 
@@ -193,13 +195,13 @@ class AbstractTradeRun:
                 if isinstance(data, list):
                     if len(data):
                         kline_time = data[-1][0]
-                        if kline_time != self.kline_time_dict.get(symbol+interval, 0):
+                        if kline_time != self.kline_time_dict.get(symbol + interval, 0):
                             edata = {'symbol': symbol, "data": data, "sold": sold, "bought": bought,
                                      "sold_bar": sold_bar, "bought_bar": bought_bar, 'interval': interval,
                                      "contrast": contrast}
                             event = Event(EVENT_KLINE, edata)
                             self.broker.event_engine.put(event)
-                            self.kline_time_dict[symbol+interval] = kline_time
+                            self.kline_time_dict[symbol + interval] = kline_time
                     return True
                 else:
                     self.dingding(f"注意是不是超并发了或者时间不对，{data}", symbol)
@@ -258,6 +260,13 @@ class AbstractTradeRun:
             self.bugcode(f"get_line_1min:{symbol},{exchange_interval}")
             flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
         time.sleep(self.time_stop)
+
+    def record_position(self, symbol_position: SymbolPosition):
+        pass
+
+    def query_position(self, symbols: List[str], start_time: int = None, end_time: int = None) \
+            -> Dict[str, List[SymbolPosition]]:
+        pass
 
     @staticmethod
     def calculate_precision(number):
