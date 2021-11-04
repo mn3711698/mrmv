@@ -133,3 +133,7 @@ dmypy.json
 
 
 .idea/
+
+gmlog_print.txt
+strategies/base.pyd
+strategies/base.so
