@@ -266,7 +266,7 @@ class AbstractTradeRun:
     def record_position(self, symbol_position: SymbolPosition):
         if record_trade:
             record_key = ':'.join([trade_record_namespace, symbol_position.symbol])
-            self.redisc.zadd(record_key, {json.dumps(symbol_position.__dict__): timestamp()})
+            self.redisc.zadd(record_key, {json.dumps(symbol_position.__dict__): symbol_position.timestamp})
 
     def query_position(self, symbols: List[str], start_time: int = None, end_time: int = None) \
             -> Dict[str, List[SymbolPosition]]:

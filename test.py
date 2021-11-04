@@ -440,7 +440,10 @@ def format_trade_size():
 
 if __name__ == '__main__':
     run = AbstractTradeRun({})
-    position = SymbolPosition(1, 'testw', Decimal(120), Decimal(11), Decimal(10))
+    position = SymbolPosition(110, 'test1w', 120.1, 11.2, 10.2)
     run.record_position(position)
-    positions = run.query_position(['testw'], 0, 100000)
-    print(positions)
+    positions = run.query_position(['testw', 'test1w'], 0, 100000)
+    for symbol, symbol_positions in positions.items():
+        print(symbol)
+        for symbol_position in symbol_positions:
+            print(symbol_position.__dict__)

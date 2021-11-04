@@ -1,9 +1,6 @@
-from decimal import Decimal
-
-
 class SymbolPosition(object):
     def __init__(self, timestamp: int, symbol: str,
-                 amount: Decimal, entry_price: Decimal, price: Decimal):
+                 amount: float, entry_price: float, price: float):
         self.timestamp = timestamp
         self.symbol = symbol
         self.amount = amount
