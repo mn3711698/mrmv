@@ -23,9 +23,6 @@ dll_map = {
         'target_dll_name': 'base.so'
     }
 }
-target_name_map = {
-    'Windows'
-}
 
 platform_type = platform.system()
 python_version = platform.python_version()
