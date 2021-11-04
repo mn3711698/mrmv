@@ -2,12 +2,14 @@
 ##############################################################################
 # Author：QQ173782910
 ##############################################################################
-
+import json
 import time
 import traceback
+from collections import defaultdict
 from decimal import Decimal
 from typing import Dict, List
 
+from KlineUtils import timestamp
 from RunUse.model.symbol_position import SymbolPosition
 from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
 from utils.brokers import Broker
@@ -17,7 +19,7 @@ from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
 from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace, \
-    record_trade
+    record_trade, trade_record_namespace
 from concurrent.futures.thread import ThreadPoolExecutor
 
 
@@ -262,11 +264,24 @@ class AbstractTradeRun:
         time.sleep(self.time_stop)
 
     def record_position(self, symbol_position: SymbolPosition):
-        pass
+        if record_trade:
+            record_key = ':'.join([trade_record_namespace, symbol_position.symbol])
+            self.redisc.zadd(record_key, {json.dumps(symbol_position.__dict__): timestamp()})
 
     def query_position(self, symbols: List[str], start_time: int = None, end_time: int = None) \
             -> Dict[str, List[SymbolPosition]]:
-        pass
+        positions_map = defaultdict(list)
+        for symbol in symbols:
+            record_key = ':'.join([trade_record_namespace, symbol])
+            position_dict_bs = self.redisc.zrangebyscore(record_key, start_time, end_time, start=0, num=9999999)
+            position_dicts = [json.loads(str(position_dict, encoding='utf-8')) for position_dict in position_dict_bs]
+            positions = []
+            for position_dict in position_dicts:
+                position = SymbolPosition(None, None, None, None, None)
+                position.__dict__ = position_dict
+                positions.append(position)
+            positions_map[symbol] = positions
+        return positions_map
 
     @staticmethod
     def calculate_precision(number):

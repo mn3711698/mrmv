@@ -7,6 +7,7 @@
     },
     "kline_source": "web",
     "record": true,
+    "record_namespace": "mrmv:position",
     "@record": "开启则记录交易信息",
     "add_pos_flag": 0,
     "@add_pos_flag": "加仓标识，为1开启，0关闭,加仓是当币在扛单中，再次遇到开仓信号就又开一次仓，这样会降低持仓均价，但爆仓风险更大",

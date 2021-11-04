@@ -3,6 +3,8 @@ import time
 from collections import defaultdict
 from decimal import Decimal
 
+from RunUse.AbstractTradeRun import AbstractTradeRun
+from RunUse.model.symbol_position import SymbolPosition
 from config import redisc
 
 from apscheduler.schedulers.background import BlockingScheduler
@@ -425,8 +427,7 @@ def fetch_klines():
     data = invoker.get_kline_interval('BTCUSDT', '1m', limit=2)
     print(data)
 
-
-if __name__ == '__main__':
+def format_trade_size():
     trading_size = -216.123
     trading_size_str = str(trading_size)
     if trading_size_str.__contains__('.'):
@@ -436,3 +437,10 @@ if __name__ == '__main__':
     format = Decimal('0.' + precision * '0')
     print(float(Decimal('0.124535345').quantize(format)))
 
+
+if __name__ == '__main__':
+    run = AbstractTradeRun({})
+    position = SymbolPosition(1, 'testw', Decimal(120), Decimal(11), Decimal(10))
+    run.record_position(position)
+    positions = run.query_position(['testw'], 0, 100000)
+    print(positions)
