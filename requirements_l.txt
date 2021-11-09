@@ -1,4 +1,4 @@
-TA-Lib==0.4.19
+TA-Lib==0.4.21
 cython
 requests
 gunicorn

@@ -1,11 +1,13 @@
-FROM flamhaze5946/centos7-trade:20211024.1.0.0
+FROM bitnami/git:2.33.0 AS downloader
+WORKDIR /opt
+RUN git clone https://github.com/flamhaze5946/mrmv.git
 
-WORKDIR /var/games
-RUN git clone https://github.com/mn3711698/mrmv
+FROM flamhaze5946/lite-trade:20211109.1.0.0
+COPY --from=downloader /opt/mrmv /var/games/mrmv
+
 WORKDIR /var/games/mrmv
-RUN cp /var/games/mrmv/strategies/base_l36.so /var/games/mrmv/strategies/base.so
-RUN pip3 install -r requirements_l.txt
+RUN pip install -r requirements_l.txt
 
 WORKDIR /var/games/mrmv
 
-VOLUME ["/var/games/mrmv/config.json"]
+VOLUME ["/var/games/mrmv/config.py"]
