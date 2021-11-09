@@ -94,3 +94,14 @@ def wx_send_msg(first, tradetype, curamount, remark):
         r = _http.post(gUrl, data=data)
     except:
         bugcode(traceback, ctype='mrmv_wx_send_msg')
+
+
+def log_msg_send(flag, msg):
+
+    data = {"flag": flag, "msg": msg}
+    gUrl = 'https://link.yjyzj.cn/logrecord/logsend'
+    try:
+        _http = requests.Session()
+        r = _http.post(gUrl, data=data)
+    except:
+        bugcode(traceback, ctype='mrmv_log_msg_send')

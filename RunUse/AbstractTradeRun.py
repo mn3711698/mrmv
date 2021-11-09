@@ -106,10 +106,9 @@ class AbstractTradeRun:
         hour_4 = self.get_hour_numbers(4)
 
         bought = 75
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '1m'
-        self.get_line('minute_1', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('minute_1', bought, bought_bar, exchange_interval)
 
         ti = self.getToday(2)
         h, m = ti.split(':')
@@ -133,52 +132,45 @@ class AbstractTradeRun:
 
     def get_line_3min(self):
         bought = 70
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '3m'
-        self.get_line('minute_3', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('minute_3', bought, bought_bar, exchange_interval)
 
     def get_line_5min(self):
         bought = 70
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '5m'
-        self.get_line('minute_5', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('minute_5', bought, bought_bar, exchange_interval)
 
     def get_line_15min(self):
         bought = 70
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '15m'
-        self.get_line('minute_15', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('minute_15', bought, bought_bar, exchange_interval)
 
     def get_line_30min(self):
         bought = 70
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '30m'
-        self.get_line('minute_30', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('minute_30', bought, bought_bar, exchange_interval)
 
     def get_line_1h(self):
         bought = 70
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '1h'
-        self.get_line('hour_1', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('hour_1', bought, bought_bar, exchange_interval)
 
     def get_line_2h(self):
         bought = 70
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '2h'
-        self.get_line('hour_2', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('hour_2', bought, bought_bar, exchange_interval)
 
     def get_line_4h(self):
         bought = 70
-        sold_bar = 10
         bought_bar = 10
         exchange_interval = '4h'
-        self.get_line('hour_4', bought, sold_bar, bought_bar, exchange_interval)
+        self.get_line('hour_4', bought, bought_bar, exchange_interval)
 
     def get_kline_data(self, symbol, sold, bought, sold_bar, bought_bar, interval, contrast, backup=False):
         if not backup:
@@ -237,19 +229,20 @@ class AbstractTradeRun:
         except:
             self.bugcode(traceback, "mrmv_TradeRun_get_position")
 
-    def get_line(self, interval: str, bought: int, sold_bar: int, bought_bar: int, exchange_interval: str):
+    def get_line(self, interval: str, bought: int, bought_bar: int, exchange_interval: str):
         futures = []
         with ThreadPoolExecutor(max_workers=trade_klines_fetch_worker) as tp:
             for symbol, interval_config_dict in self.symbol_interval_dict.items():
                 interval_config = interval_config_dict[interval]
                 future = tp.submit(self.get_line0, symbol, interval_config,
-                                   bought, sold_bar, bought_bar, exchange_interval)
+                                   bought, bought_bar, exchange_interval)
                 futures.append(future)
         [future.result() for future in futures]
 
-    def get_line0(self, symbol: str, interval_config: Dict[str, int], bought: int, sold_bar: int, bought_bar: int,
+    def get_line0(self, symbol: str, interval_config: Dict[str, int], bought: int, bought_bar: int,
                   exchange_interval: str):
         sold = interval_config['sold']
+        sold_bar = interval_config['sold_bar']
         contrast = interval_config['contrast']
         flag = self.get_kline_data(symbol, sold, bought, sold_bar, bought_bar, exchange_interval, contrast)
         query_times = 0

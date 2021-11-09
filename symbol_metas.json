@@ -5,36 +5,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 10
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 20
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 31,
-        "contrast": 4
+        "sold": 24,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 32,
-        "contrast": 15
+        "sold": 12,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 10
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
         "sold": 30,
+        "sold_bar": 5,
         "contrast": 10
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 10
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": -4
       }
     }
   },
@@ -44,36 +42,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 2
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": -10
+        "sold": 25,
+        "sold_bar": 8,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 4
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 12
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 2
+        "sold": 21,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 50
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 18
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 17
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -83,36 +79,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 42
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 13
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 31,
-        "contrast": 53
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": -10
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 15
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 10
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 10
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 15
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -122,36 +116,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 50
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 30,
-        "contrast": -20
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 10
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 50
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 50
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 20
-      },
-      "hour_2": {
-        "sold": 35,
-        "contrast": -10
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 20
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -161,36 +153,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 25
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 24
+        "sold": 24,
+        "sold_bar": 7,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 32,
-        "contrast": 36
+        "sold": 24,
+        "sold_bar": 6,
+        "contrast": 2
       },
       "minute_15": {
-        "sold": 35,
-        "contrast": -20
+        "sold": 25,
+        "sold_bar": 9,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 32,
-        "contrast": 40
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 50
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 100
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 100
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -200,36 +190,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": -10
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 20
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 31,
-        "contrast": 41
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 31,
-        "contrast": 91
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 5
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 33,
-        "contrast": 20
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 30
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 20
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -239,36 +227,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 17
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 11
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 95
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 25
+        "sold": 22,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 50
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 100
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 42
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 100
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -278,36 +264,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 115
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 22,
-        "contrast": -62
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": -25
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 25,
-        "contrast": 71
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 25,
-        "contrast": 68
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 25,
-        "contrast": 119
-      },
-      "hour_2": {
-        "sold": 25,
-        "contrast": 16
-      },
-      "hour_4": {
-        "sold": 25,
-        "contrast": 299
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -317,36 +301,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 21,
-        "contrast": 150
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 10
+        "sold": 20,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 45
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 35,
-        "contrast": 90
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 33,
-        "contrast": 90
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 34,
-        "contrast": 90
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 45
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 19
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -356,36 +338,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": 80
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": -12
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": -12
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 33,
-        "contrast": -5
+        "sold": 25,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 33,
-        "contrast": -4
+        "sold": 21,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 40
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 150
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 52
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -395,36 +375,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 75
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": -13
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -12
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": -25
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 70
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 80
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 140
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 70
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -434,36 +412,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 24
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": -15
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": 150
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": -5
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 32,
-        "contrast": -10
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 33
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 115
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 12
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -473,36 +449,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": -10
+        "sold": 11,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 2
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 145
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 32,
-        "contrast": -22
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 22
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 24
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 39
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 12
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -512,36 +486,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": -30
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": -15
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -10
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 31,
-        "contrast": -8
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 18
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 23
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 62
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 4
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -551,36 +523,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 38
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 22
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": 18
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 6
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 153
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 45
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 45
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 58
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -590,36 +560,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 49
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 8
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": -31
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 68
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 55
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 21
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 9
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 22
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -629,36 +597,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 21,
-        "contrast": 34
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": -24
+        "sold": 24,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 131
+        "sold": 26,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 40
+        "sold": 21,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 68
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 63
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 54
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": -9
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -668,36 +634,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 28,
-        "contrast": -20
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": -19
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": -26
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 44
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 78
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 10
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 14
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": -18
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -707,36 +671,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": -28
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 21,
-        "contrast": -20
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 59
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 178
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 78
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 23
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 9
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 55
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -746,36 +708,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": -41
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 30
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -52
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 83
+        "sold": 23,
+        "sold_bar": 6,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 14
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 31
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 6
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 30
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -785,36 +745,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": -11
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": -6
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": -41
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": -21
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 22
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 34
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 21
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 6
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -824,36 +782,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 18,
-        "contrast": 100
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": 21
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 230
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 25,
-        "contrast": -39
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 44
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 24
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 64
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 22
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -863,36 +819,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 21,
-        "contrast": 118
+        "sold": 7,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": 186
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 5
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 84
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 78
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 5
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 5
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 5
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -903,35 +857,33 @@
     "interval": {
       "minute_1": {
         "sold": 25,
-        "contrast": 13
+        "sold_bar": 5,
+        "contrast": 5
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 20
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 38
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": -3
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 30
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 26
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 150
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 31
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -941,36 +893,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 61
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 7
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": -24
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 69
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 71
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 15
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": -21
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 25
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -980,36 +930,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 59
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 13
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 62
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
         "sold": 27,
-        "contrast": -20
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": -19
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 40
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 22
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 18
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1019,36 +967,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 82
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
         "sold": 27,
-        "contrast": -30
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 67
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 166
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 51
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 100
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 82
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 6
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1058,36 +1004,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 150
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": -42
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 33
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 220
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 77
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 64
-      },
-      "hour_2": {
-        "sold": 28,
-        "contrast": 22
-      },
-      "hour_4": {
-        "sold": 28,
-        "contrast": 70
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1097,36 +1041,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 17
-      },
-      "minute_3": {
-        "sold": 25,
-        "contrast": -20
-      },
-      "minute_5": {
-        "sold": 25,
-        "contrast": -41
-      },
-      "minute_15": {
-        "sold": 27,
-        "contrast": 75
-      },
-      "minute_30": {
-        "sold": 28,
-        "contrast": 101
-      },
-      "hour_1": {
-        "sold": 28,
+        "sold": 10,
+        "sold_bar": 5,
         "contrast": 1
       },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 24
+      "minute_3": {
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
-      "hour_4": {
-        "sold": 35,
-        "contrast": -38
+      "minute_5": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
+      },
+      "minute_15": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
+      },
+      "minute_30": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
+      },
+      "hour_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1136,36 +1078,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 5
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
         "sold": 27,
-        "contrast": -14
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
         "sold": 28,
-        "contrast": 58
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 57
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 22
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 12
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 79
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1175,36 +1115,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 46
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": -50
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
         "sold": 26,
-        "contrast": 80
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 110
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 39
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 91
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 42
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": -5
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1214,36 +1152,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 200
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": 150
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 23,
-        "contrast": -22
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 14
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 83
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 16
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 30
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": -50
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1253,36 +1189,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 100
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 200
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
         "sold": 24,
-        "contrast": 86
+        "sold_bar": 5,
+        "contrast": 10
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 60
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 190
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
         "sold": 30,
+        "sold_bar": 5,
         "contrast": 4
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 150
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 150
       }
     }
   },
@@ -1293,35 +1227,33 @@
     "interval": {
       "minute_1": {
         "sold": 21,
-        "contrast": 150
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": 150
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 24,
-        "contrast": 100
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
         "sold": 24,
-        "contrast": 60
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 100
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 75
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 80
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 100
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1331,36 +1263,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": -30
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 105
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 90
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 22
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 27
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": -14
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": -1
-      },
-      "hour_4": {
-        "sold": 27,
-        "contrast": 109
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1370,36 +1300,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 20,
-        "contrast": 150
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 150
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 24,
-        "contrast": 62
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": -11
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 46
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": 14
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": 70
-      },
-      "hour_4": {
-        "sold": 27,
-        "contrast": 50
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1409,36 +1337,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": 150
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 150
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": -10
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": -38
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 125
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": -25
-      },
-      "hour_2": {
-        "sold": 28,
-        "contrast": -40
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": -40
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1448,36 +1374,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 295
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 114
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": -27
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 245
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 52
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 21
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 21
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 56
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1487,36 +1411,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 500
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 300
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 47
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 113
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 26,
-        "contrast": -14
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": 101
-      },
-      "hour_2": {
-        "sold": 28,
-        "contrast": 76
-      },
-      "hour_4": {
-        "sold": 28,
-        "contrast": -8
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1526,36 +1448,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 154
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 350
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 178
+        "sold": 10,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 111
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 26,
-        "contrast": 90
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": 38
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 3
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 3
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1565,36 +1485,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": -10
+        "sold": 11,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 218
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 24,
-        "contrast": -58
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 24,
-        "contrast": 94
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 26,
-        "contrast": 92
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": 81
-      },
-      "hour_2": {
-        "sold": 26,
-        "contrast": 10
-      },
-      "hour_4": {
-        "sold": 27,
-        "contrast": 111
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1604,36 +1522,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 150
+        "sold": 12,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 65
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 155
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 80
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 59
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 28,
-        "contrast": 115
-      },
-      "hour_2": {
-        "sold": 28,
-        "contrast": -4
-      },
-      "hour_4": {
-        "sold": 28,
-        "contrast": 100
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1643,36 +1559,34 @@
     "add_arg": 0.97,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 74
+        "sold": 9,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 400
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -15
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 72
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 175
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 28,
-        "contrast": 79
-      },
-      "hour_2": {
-        "sold": 28,
-        "contrast": 57
-      },
-      "hour_4": {
-        "sold": 28,
-        "contrast": 55
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1682,36 +1596,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 67
+        "sold": 10,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": 126
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 42
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 55
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 44
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 28,
-        "contrast": 89
-      },
-      "hour_2": {
-        "sold": 28,
-        "contrast": 70
-      },
-      "hour_4": {
-        "sold": 28,
-        "contrast": -12
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1721,36 +1633,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": -39
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 245
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 183
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 80
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 30
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 29
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 21
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 40
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1760,36 +1670,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 19,
-        "contrast": -92
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 46
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 200
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": -23
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": -7
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 54
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 42
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 32
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1799,36 +1707,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": 22
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": -22
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": 189
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 44
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 38
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": 34
-      },
-      "hour_2": {
-        "sold": 29,
-        "contrast": -21
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 65
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1839,35 +1745,33 @@
     "interval": {
       "minute_1": {
         "sold": 18,
-        "contrast": 427
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 18,
-        "contrast": 62
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 24,
-        "contrast": 85
+        "sold": 11,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 38
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 57
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 12
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": -10
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": -14
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -1877,36 +1781,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": -68
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 400
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 24,
-        "contrast": 350
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 165
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 143
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 98
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 16
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 16
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1916,36 +1818,33 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": -62
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 22,
-        "contrast": 41
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
         "sold": 24,
+        "sold_bar": 5,
         "contrast": -52
       },
       "minute_15": {
         "sold": 27,
-        "contrast": 136
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 37
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 33,
-        "contrast": 20
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 50
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1955,36 +1854,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 14
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": -25
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": 42
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 88
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 88
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": -23
-      },
-      "hour_2": {
-        "sold": 29,
-        "contrast": -20
-      },
-      "hour_4": {
-        "sold": 29,
-        "contrast": 26
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -1994,36 +1891,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 199
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": 68
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 43
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 109
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 94
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 63
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 92
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 91
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2033,36 +1928,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 28
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 31,
-        "contrast": 250
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 250
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 36
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 300
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 32
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 24
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 24
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2072,36 +1965,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 350
+        "sold": 12,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": -41
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 31,
-        "contrast": 130
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 95
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 120
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 70
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 55
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 15
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2111,36 +2002,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": -11
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": -4
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 44
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 100
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 26,
-        "contrast": 136
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": 56
-      },
-      "hour_2": {
-        "sold": 26,
-        "contrast": 75
-      },
-      "hour_4": {
-        "sold": 29,
-        "contrast": 80
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2150,36 +2039,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 21,
-        "contrast": 650
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": 10
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 8
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 24,
-        "contrast": 10
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": -28
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": 58
-      },
-      "hour_2": {
-        "sold": 29,
-        "contrast": -12
-      },
-      "hour_4": {
-        "sold": 29,
-        "contrast": 37
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2189,36 +2076,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 58
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 474
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 133
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 85
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 81
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": -2
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": -11
-      },
-      "hour_4": {
-        "sold": 27,
-        "contrast": -24
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2228,36 +2113,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 200
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": -60
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 15
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 100
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 350
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 200
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": -20
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": -7
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2267,36 +2150,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 28,
-        "contrast": 220
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 150
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": 5
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 100
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 72
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": -7
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": -20
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 35
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2306,36 +2187,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 150
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 50
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 150
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 100
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 25
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 50
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 100
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 30
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2345,36 +2224,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 41
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": 120
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": -28
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": -8
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 51
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 26
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 15
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 13
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2384,36 +2261,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": -7
+        "sold": 16,
+        "sold_bar": 7,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": -32
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 23,
-        "contrast": -4
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 200
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 42
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 46
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 47
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 12
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2423,36 +2298,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 32
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 250
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 37
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 50
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 85
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 31
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 51
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 110
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2462,36 +2335,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 71
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 100
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 95
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 110
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 34
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 32
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 46
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 35
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2501,36 +2372,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 110
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 12
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 35
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 21
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": -11
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": -15
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 29
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 89
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2540,36 +2409,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 28,
-        "contrast": 31
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 160
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 53
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 95
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 66
+        "sold": 12,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 105
-      },
-      "hour_2": {
-        "sold": 29,
-        "contrast": 55
-      },
-      "hour_4": {
-        "sold": 29,
-        "contrast": 63
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2579,36 +2446,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 33
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 18
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 35
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 54
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 97
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": -18
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 91
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 45
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2618,36 +2483,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": 350
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 64
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -13
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 92
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 31
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 17
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 28
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 45
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2657,36 +2520,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 350
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 150
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 150
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": -10
+        "sold": 8,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 30
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 70
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 31
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 77
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2696,36 +2557,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": -20
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 100
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 120
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 100
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 52
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 35
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 39
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -2735,36 +2594,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 20,
-        "contrast": 200
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 20,
-        "contrast": 1
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 28
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 25,
-        "contrast": -45
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 25,
-        "contrast": -20
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 33,
-        "contrast": -22
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": -10
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 75
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2774,36 +2631,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 98
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": -60
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 22,
-        "contrast": 90
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": -5
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 130
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": 43
-      },
-      "hour_2": {
-        "sold": 28,
-        "contrast": 60
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 60
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2813,36 +2668,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
+        "sold": 19,
+        "sold_bar": 5,
         "contrast": -1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": -34
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": 35
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": -25
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 26,
-        "contrast": 100
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": 65
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": 36
-      },
-      "hour_4": {
-        "sold": 27,
-        "contrast": 150
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2852,36 +2705,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 45
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 20
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 63
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 104
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 62
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 38
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 93
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": -10
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2891,36 +2742,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": -23
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 21,
-        "contrast": 60
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": -55
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 25,
-        "contrast": 150
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 25,
-        "contrast": 58
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 50
-      },
-      "hour_2": {
-        "sold": 29,
-        "contrast": 78
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 52
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2930,36 +2779,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 150
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": -8
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
         "sold": 24,
-        "contrast": -4
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 20
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 25,
-        "contrast": 50
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": 39
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 65
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 89
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -2969,36 +2816,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 85
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 21
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 63
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 25,
-        "contrast": 43
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 26,
-        "contrast": 230
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 26,
-        "contrast": 50
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": 93
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 55
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3008,36 +2853,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 28,
-        "contrast": -10
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 140
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": -20
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 160
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 76
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": -15
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 200
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 150
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3047,36 +2890,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 21,
-        "contrast": 200
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 50
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 100
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": -27
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 53
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 28,
-        "contrast": 52
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 63
-      },
-      "hour_4": {
-        "sold": 27,
-        "contrast": 130
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3086,36 +2927,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 100
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 32
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 24,
-        "contrast": -35
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": -30
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 85
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 43
-      },
-      "hour_2": {
-        "sold": 25,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 40
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3125,36 +2964,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 200
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": -45
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -33
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": -9
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 35
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 33
-      },
-      "hour_2": {
-        "sold": 29,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 29,
-        "contrast": 23
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3164,36 +3001,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": -50
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 92
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -10
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": -5
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 43
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": -15
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 65
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 32
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3203,36 +3038,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 21
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 22,
-        "contrast": -50
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 20,
-        "contrast": 250
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 23,
-        "contrast": 300
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 23,
-        "contrast": -10
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 25,
-        "contrast": -30
-      },
-      "hour_2": {
-        "sold": 26,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 26,
-        "contrast": 50
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3242,36 +3075,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 35
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 100
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": -10
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 62
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": -23
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 50
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": 70
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": -12
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3281,36 +3112,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 52
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
         "sold": 23,
-        "contrast": 30
+        "sold_bar": 5,
+        "contrast": 10
       },
       "minute_5": {
-        "sold": 32,
-        "contrast": -20
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 31,
-        "contrast": 53
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 130
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 36
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 75
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": -10
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3320,36 +3149,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": -3
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 110
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 94
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": -38
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 55
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 47
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 55
-      },
-      "hour_4": {
-        "sold": 29,
-        "contrast": 73
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3359,36 +3186,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 200
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": -20
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 85
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 90
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 77
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 27,
-        "contrast": 21
-      },
-      "hour_2": {
-        "sold": 27,
-        "contrast": 72
-      },
-      "hour_4": {
-        "sold": 31,
-        "contrast": 63
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3398,36 +3223,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 200
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 50
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 150
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 85
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 57
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 75
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 75
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 75
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3437,36 +3260,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 501
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": -7
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 93
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": -16
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 20
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 29
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 77
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 28
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3476,36 +3297,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": -50
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 60
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 23
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 25
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 34,
-        "contrast": 51
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 35,
-        "contrast": 30
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": -19
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 25
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3515,36 +3334,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 86
+        "sold": 12,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 25
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 25
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 85
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 69
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 47
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 28
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3554,36 +3371,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 90
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 100
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 35
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 20
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 27,
-        "contrast": 27
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 19
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 48
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 45
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3593,36 +3408,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 94
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": 78
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 83
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 100
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 35
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 11
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 65
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": -11
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3632,36 +3445,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": -10
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 70
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 41
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 47
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 32,
-        "contrast": 31
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 43
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 26
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 55
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3671,36 +3482,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": 15
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 150
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 44
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 100
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 65
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 24
-      },
-      "hour_2": {
-        "sold": 35,
-        "contrast": 15
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 31
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3710,36 +3519,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 100
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": 100
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 35
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": -30
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 33,
-        "contrast": 50
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 34,
-        "contrast": 20
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 100
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 22
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3749,36 +3556,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": -15
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": -15
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 100
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": -33
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 100
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": -23
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": -45
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 45
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3788,36 +3593,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 35
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 150
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 90
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 20
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 55
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": -20
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 55
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 31
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3827,36 +3630,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 700
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
         "sold": 22,
-        "contrast": -15
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
         "sold": 26,
-        "contrast": 55
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 100
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 30
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 28,
-        "contrast": 30
-      },
-      "hour_2": {
-        "sold": 29,
-        "contrast": 60
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 34
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3866,36 +3667,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 25,
-        "contrast": 100
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 30,
-        "contrast": -23
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 85
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 32,
-        "contrast": 100
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 32,
-        "contrast": 32
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 34,
-        "contrast": 22
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 100
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 100
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -3905,36 +3704,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": -4
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": 33
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -17
+        "sold": 14,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 33,
-        "contrast": 58
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 33,
-        "contrast": 65
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 33,
-        "contrast": 23
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 42
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 85
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3944,36 +3741,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 35
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 30,
-        "contrast": 50
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": -35
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 31,
-        "contrast": -6
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 33,
-        "contrast": 24
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": -15
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 31
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 47
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -3983,36 +3778,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 30,
-        "contrast": -33
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 30,
-        "contrast": 46
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 100
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 30
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 52
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 21
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": -13
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 47
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4022,36 +3815,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 29,
-        "contrast": 30
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 30,
-        "contrast": 150
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 29,
-        "contrast": -22
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": -6
+        "sold": 12,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 32
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 55
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 22
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": -3
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -4061,36 +3852,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 27,
-        "contrast": 5
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 100
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 41
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": -13
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 25
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 21
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 26
-      },
-      "hour_4": {
-        "sold": 32,
-        "contrast": 30
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4100,36 +3889,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": 20
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 80
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 25
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": -5
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 80
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 35
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 50
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": -30
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4140,35 +3927,33 @@
     "interval": {
       "minute_1": {
         "sold": 23,
-        "contrast": -25
+        "sold_bar": 5,
+        "contrast": -20
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 80
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 30,
-        "contrast": 11
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 110
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 32,
-        "contrast": 25
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 31
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 30
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": -2
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -4178,36 +3963,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 21,
-        "contrast": -20
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": 100
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": -45
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -2
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 50
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": -3
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 31,
-        "contrast": 14
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 90
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 35
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4217,36 +4000,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 21,
-        "contrast": -2
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 25,
-        "contrast": 50
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 50
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 80
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 24
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 33
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 100
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 36
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4256,36 +4037,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": 80
+        "sold": 12,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 15
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": 80
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 29,
-        "contrast": 20
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 36
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 35
-      },
-      "hour_2": {
-        "sold": 31,
-        "contrast": 20
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 25
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -4295,36 +4074,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 23,
-        "contrast": -30
+        "sold": 13,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 23,
-        "contrast": 60
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": 27
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 50
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 32,
-        "contrast": -22
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 35,
-        "contrast": 45
-      },
-      "hour_2": {
-        "sold": 35,
-        "contrast": 35
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 50
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -4335,35 +4112,33 @@
     "interval": {
       "minute_1": {
         "sold": 23,
-        "contrast": -30
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": -30
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 70
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 26,
-        "contrast": 60
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 35
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 13
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 31
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 30
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4373,36 +4148,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 26,
-        "contrast": 60
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 50
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 60
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 30,
-        "contrast": 60
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 32,
-        "contrast": 70
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 33,
-        "contrast": 36
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 60
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": -5
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   },
@@ -4413,35 +4186,33 @@
     "interval": {
       "minute_1": {
         "sold": 26,
-        "contrast": 60
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 27,
-        "contrast": 50
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": -22
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 100
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 140
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 45
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 70
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 25
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4451,36 +4222,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 25
+        "sold": 12,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 24,
-        "contrast": -20
+        "sold": 16,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 26,
-        "contrast": 80
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 27,
-        "contrast": 10
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 33,
-        "contrast": 30
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 34,
-        "contrast": 29
-      },
-      "hour_2": {
-        "sold": 34,
-        "contrast": 60
-      },
-      "hour_4": {
-        "sold": 34,
-        "contrast": 27
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4490,36 +4259,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 110
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 26,
-        "contrast": 35
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 27,
-        "contrast": 17
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 90
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 30,
-        "contrast": 55
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 180
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 60
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 21
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4529,36 +4296,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 22,
-        "contrast": 300
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
         "sold": 23,
-        "contrast": 100
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_5": {
-        "sold": 25,
-        "contrast": -19
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": -20
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 29,
-        "contrast": 40
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "hour_1": {
-        "sold": 30,
-        "contrast": 35
-      },
-      "hour_2": {
-        "sold": 30,
-        "contrast": 36
-      },
-      "hour_4": {
-        "sold": 30,
-        "contrast": 60
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4568,36 +4333,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 24,
-        "contrast": 300
+        "sold": 15,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_3": {
-        "sold": 28,
-        "contrast": -50
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 28,
-        "contrast": -20
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_15": {
-        "sold": 28,
-        "contrast": 35
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_30": {
-        "sold": 28,
-        "contrast": 70
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 29,
-        "contrast": 25
-      },
-      "hour_2": {
-        "sold": 33,
-        "contrast": 30
-      },
-      "hour_4": {
-        "sold": 33,
-        "contrast": 25
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -1
       }
     }
   },
@@ -4607,36 +4370,34 @@
     "add_arg": 0.972,
     "interval": {
       "minute_1": {
-        "sold": 28,
-        "contrast": -30
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_3": {
-        "sold": 29,
-        "contrast": 25
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "minute_5": {
-        "sold": 31,
-        "contrast": -20
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_15": {
-        "sold": 31,
-        "contrast": 90
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 1
       },
       "minute_30": {
-        "sold": 31,
-        "contrast": 50
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -1
       },
       "hour_1": {
-        "sold": 32,
-        "contrast": 10
-      },
-      "hour_2": {
-        "sold": 32,
-        "contrast": 15
-      },
-      "hour_4": {
-        "sold": 35,
-        "contrast": 53
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 1
       }
     }
   }
