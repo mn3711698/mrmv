@@ -36,6 +36,7 @@ add_pos_amount = config_dict['trade']['add_pos_amount']  # 加仓次数，0不�
 kline_source = config_dict['trade']['kline_source']
 record_trade = config_dict['trade']['record']
 trade_record_namespace = config_dict['trade']['record_namespace']
+leverage = config_dict['trade']['leverage']
 
 trade_klines_fetch_worker = config_dict['system']['redis_klines_web_fetch_worker']
 redis_namespace = config_dict['system']['redis_klines_namespace']

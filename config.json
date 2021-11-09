@@ -1,6 +1,7 @@
 {
   "trade": {
     "trade_size_factor": 1,
+    "leverage": 10,
     "exchange": {
       "access_key": "",
       "access_secret": ""

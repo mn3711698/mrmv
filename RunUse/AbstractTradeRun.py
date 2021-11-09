@@ -9,7 +9,6 @@ from collections import defaultdict
 from decimal import Decimal
 from typing import Dict, List
 
-from KlineUtils import timestamp
 from RunUse.model.symbol_position import SymbolPosition
 from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
 from utils.brokers import Broker
@@ -19,7 +18,7 @@ from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
 from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace, \
-    record_trade, trade_record_namespace
+    record_trade, trade_record_namespace, leverage
 from concurrent.futures.thread import ThreadPoolExecutor
 
 
@@ -94,6 +93,8 @@ class AbstractTradeRun:
                                     msg = f"config里的symbol:{_symbol},trading_size:{trading_size},太小,minQty{min_qty}"
                                     self.bugcode(msg)
                                 self.min_volume_dict[_symbol] = min_qty
+            for _symbol in self.trading_size_dict.keys():
+                self.binance_http.set_leverage(_symbol, leverage)
         except:
             self.bugcode(traceback, "mrmv_TradeRun_initialization_data")
 
