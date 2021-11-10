@@ -9,7 +9,8 @@ import time
 import hmac
 import hashlib
 from enum import Enum
-from threading import Thread, Lock
+from threading import Lock
+from apscheduler.schedulers.background import BackgroundScheduler
 
 
 class OrderStatus(object):
@@ -79,6 +80,15 @@ class BinanceFutureHttp(object):
         self.timeout = timeout
         self.order_count_lock = Lock()
         self.order_count = 1_000_000
+        self.time_offset = 0
+        self.time_offset_scheduler = BackgroundScheduler()
+        self.time_offset_scheduler.add_job(self.tune_time_offset, trigger='cron', id='time_offset_update', minute='*')
+        self.time_offset_scheduler.start()
+
+    def tune_time_offset(self):
+        server_time = self.server_time()['serverTime']
+        sys_time = int(time.time() * 1000)
+        self.time_offset = sys_time - server_time
 
     def build_parameters(self, params: dict):
         keys = list(params.keys())
@@ -326,7 +336,7 @@ class BinanceFutureHttp(object):
             return self.order_count
 
     def _timestamp(self):
-        return int(time.time() * 1000)
+        return int(time.time() * 1000) - self.time_offset
 
     def _sign(self, params):
 
@@ -648,6 +658,3 @@ class BinanceSpotHttp(object):
         if order_id:
             query_dict["orderId"] = order_id
         return self.request(RequestMethod.GET, path, query_dict, verify=True)
-
-
-
