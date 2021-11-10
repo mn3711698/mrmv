@@ -72,7 +72,7 @@ class PositionSide(Enum):
 
 class BinanceFutureHttp(object):
 
-    def __init__(self, key=None, secret=None, host=None, time_adjust: bool = True, timeout=30):
+    def __init__(self, timezone, key=None, secret=None, host=None, time_adjust: bool = True, timeout=30):
         self.key = key
         self.secret = secret
         self.host = host if host else "https://fapi.binance.com"
@@ -82,7 +82,7 @@ class BinanceFutureHttp(object):
         self.order_count = 1_000_000
         self.time_offset = 0
         if time_adjust:
-            self.time_offset_scheduler = BackgroundScheduler()
+            self.time_offset_scheduler = BackgroundScheduler(timezone=timezone)
             self.time_offset_scheduler.add_job(self.tune_time_offset, trigger='cron', id='time_offset_update',
                                                minute='*')
             self.time_offset_scheduler.start()

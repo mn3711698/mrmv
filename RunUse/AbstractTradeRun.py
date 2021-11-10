@@ -18,7 +18,7 @@ from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
 from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace, \
-    record_trade, trade_record_namespace, leverage
+    record_trade, trade_record_namespace, leverage, timezone
 from concurrent.futures.thread import ThreadPoolExecutor
 
 
@@ -44,13 +44,16 @@ class AbstractTradeRun:
         self.engine = EventEngine()
 
         if kline_source == 'redis':
-            self.binance_http = RedisWrapperBinanceFutureHttp(redisc, redis_namespace, self.key, self.secret)
-            self.broker = Broker(self.engine, binance_http=self.binance_http, key=self.key, secret=self.secret,
+            self.binance_http = RedisWrapperBinanceFutureHttp(timezone, redisc, redis_namespace,
+                                                              key=self.key, secret=self.secret)
+            self.broker = Broker(timezone, self.engine, binance_http=self.binance_http,
+                                 key=self.key, secret=self.secret,
                                  symbols_list=self.symbols_list)
-            self.backup_binance_http = BinanceFutureHttp(key=self.key, secret=self.secret)
+            self.backup_binance_http = BinanceFutureHttp(timezone, key=self.key, secret=self.secret)
 
         elif kline_source == 'web':
-            self.broker = Broker(self.engine, key=self.key, secret=self.secret, symbols_list=self.symbols_list)
+            self.broker = Broker(timezone, self.engine,
+                                 key=self.key, secret=self.secret, symbols_list=self.symbols_list)
             self.binance_http = self.broker.binance_http
             self.backup_binance_http = self.binance_http
 
