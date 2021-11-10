@@ -449,6 +449,12 @@ class BinanceFutureHttp(object):
 
         return self.request(RequestMethod.DELETE, path, params, verify=True)
 
+    def set_leverage(self, symbol: str, leverage: int):
+        path = "/fapi/v1/leverage"
+        params = {"symbol": symbol, "leverage": leverage, "timestamp": self._timestamp()}
+
+        return self.request(RequestMethod.POST, path, params, verify=True)
+
     def get_open_orders(self, symbol=None):
         path = "/fapi/v1/openOrders"
 
