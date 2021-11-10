@@ -91,7 +91,6 @@ class BinanceFutureHttp(object):
         server_time = self.server_time()['serverTime']
         sys_time = int(time.time() * 1000)
         self.time_offset = sys_time - server_time
-        print(f'{self.time_offset}')
 
     def build_parameters(self, params: dict):
         keys = list(params.keys())
