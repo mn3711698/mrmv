@@ -14,11 +14,6 @@ interval_millseconds_map = {
     '4h': 1000 * 60 * 60 * 4,
 }
 
-invoker = BinanceFutureHttp()
-exchange_info = invoker.exchangeInfo()
-symbol_infos = exchange_info['symbols']
-symbols = [symbol_info['symbol'] for symbol_info in symbol_infos]
-
 
 def get_kline_key_name(namespace: str, interval: str, symbol: str):
     return str.join(':', [namespace, interval, symbol])
