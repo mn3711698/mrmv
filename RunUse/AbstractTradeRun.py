@@ -77,7 +77,7 @@ class AbstractTradeRun:
 
     def initialization_data(self):
         try:
-            binance_http = BinanceFutureHttp(key=self.key, secret=self.secret)
+            binance_http = self.binance_http
             exchange_infos = binance_http.exchangeInfo()
             if isinstance(exchange_infos, dict):
                 exchange_symbol_infos = exchange_infos['symbols']
