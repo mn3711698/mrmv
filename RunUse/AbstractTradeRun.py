@@ -106,8 +106,6 @@ class AbstractTradeRun:
         minute_5 = self.get_minute_numbers(5)
         minute_15 = self.get_minute_numbers(15)
         minute_30 = self.get_minute_numbers(30)
-        hour_2 = self.get_hour_numbers(2)
-        hour_4 = self.get_hour_numbers(4)
 
         bought = 75
         bought_bar = 10
@@ -126,13 +124,8 @@ class AbstractTradeRun:
         if m in minute_30:
             self.get_line_30min()
 
-        self.get_line_1h()
-
-        # 判断时钟 1h,2h,4h
-        if h in hour_2:
-            self.get_line_2h()
-        if h in hour_4:
-            self.get_line_4h()
+        if m == 0:
+            self.get_line_1h()
 
     def get_line_3min(self):
         bought = 70
@@ -163,18 +156,6 @@ class AbstractTradeRun:
         bought_bar = 10
         exchange_interval = '1h'
         self.get_line('hour_1', bought, bought_bar, exchange_interval)
-
-    def get_line_2h(self):
-        bought = 70
-        bought_bar = 10
-        exchange_interval = '2h'
-        self.get_line('hour_2', bought, bought_bar, exchange_interval)
-
-    def get_line_4h(self):
-        bought = 70
-        bought_bar = 10
-        exchange_interval = '4h'
-        self.get_line('hour_4', bought, bought_bar, exchange_interval)
 
     def get_kline_data(self, symbol, sold, bought, sold_bar, bought_bar, interval, contrast, backup=False):
         if not backup:
