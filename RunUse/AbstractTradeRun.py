@@ -67,7 +67,7 @@ class AbstractTradeRun:
         self.secret = secret
 
         self.engine = EventEngine()
-        self.scheduler = BackgroundScheduler()
+        self.scheduler = BackgroundScheduler(timezone=timezone)
 
         if kline_source == 'redis':
             self.binance_http = RedisWrapperBinanceFutureHttp(timezone, redisc, redis_namespace,
