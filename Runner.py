@@ -4,13 +4,10 @@
 # Author：QQ173782910
 ##############################################################################
 
-import talib
 import logging
-from apscheduler.schedulers.background import BlockingScheduler
 
 import config
 from RunUse.AbstractTradeRun import AbstractTradeRun
-from config import get_symbol_metas, timezone
 import sys
 
 
@@ -24,11 +21,5 @@ if __name__ == '__main__':  # 25
     group_name = None
     if len(sys.argv) >= 2:
         group_name = sys.argv[1]
-    RunTrade = AbstractTradeRun(config.config_raw, group_name)
-    scheduler = BlockingScheduler(timezone=timezone)  # 定时的任务.
-
-    scheduler.add_job(RunTrade.get_line_1min, trigger='cron', id='TradeRunS1_1', second='2')  # 1min
-    #####################################################################################
-
-    scheduler.add_job(RunTrade.get_position, trigger='cron', id='TradeRunGMRMp', second='*/10')
-    scheduler.start()
+    trader = AbstractTradeRun(config.config_raw, group_name)
+    trader.start()

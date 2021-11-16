@@ -13,10 +13,10 @@ version_flag = '20211109'
 
 with open(r'config.json', encoding='utf-8') as config_file:
     config_dict = json.load(config_file)
-with open(r'symbol_metas.json', encoding='utf-8') as symbol_metas_file:
+with open(r'metas/symbol_metas.json', encoding='utf-8') as symbol_metas_file:
     symbol_metas_dict = json.load(symbol_metas_file)
     config_dict['trade']['strategy']['symbol_metas'] = symbol_metas_dict
-with open(r'interval_metas.json', encoding='utf-8') as interval_metas_file:
+with open(r'metas/interval_metas.json', encoding='utf-8') as interval_metas_file:
     interval_metas_dict = json.load(interval_metas_file)
     config_dict['trade']['strategy']['interval_metas'] = interval_metas_dict
 
