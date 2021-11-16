@@ -1,6 +1,6 @@
 class SymbolPosition(object):
-    def __init__(self, timestamp: int, symbol: str,
-                 amount: float, entry_price: float, price: float):
+    def __init__(self, timestamp: int = None, symbol: str = None,
+                 amount: float = None, entry_price: float = None, price: float = None):
         self.timestamp = timestamp
         self.symbol = symbol
         self.amount = amount

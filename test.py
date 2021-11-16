@@ -438,12 +438,14 @@ def format_trade_size():
     print(float(Decimal('0.124535345').quantize(format)))
 
 
+def get_minute_numbers(step: int):
+    return [str(i).zfill(2) for i in range(0, 60, step)]
+
+
+def get_hour_numbers(step: int):
+    return [str(i).zfill(2) for i in range(0, 24, step)]
+
+
 if __name__ == '__main__':
-    run = AbstractTradeRun({})
-    position = SymbolPosition(110, 'test1w', 120.1, 11.2, 10.2)
-    run.record_position(position)
-    positions = run.query_position(['testw', 'test1w'], 0, 100000)
-    for symbol, symbol_positions in positions.items():
-        print(symbol)
-        for symbol_position in symbol_positions:
-            print(symbol_position.__dict__)
+    print(get_hour_numbers(3))
+    print(get_minute_numbers(3))

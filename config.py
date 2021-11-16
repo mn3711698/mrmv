@@ -13,9 +13,12 @@ version_flag = '20211109'
 
 with open(r'config.json', encoding='utf-8') as config_file:
     config_dict = json.load(config_file)
-with open(r'symbol_metas.json', encoding='utf-8') as symbol_metas_file:
+with open(r'metas/symbol_metas.json', encoding='utf-8') as symbol_metas_file:
     symbol_metas_dict = json.load(symbol_metas_file)
     config_dict['trade']['strategy']['symbol_metas'] = symbol_metas_dict
+with open(r'metas/interval_metas.json', encoding='utf-8') as interval_metas_file:
+    interval_metas_dict = json.load(interval_metas_file)
+    config_dict['trade']['strategy']['interval_metas'] = interval_metas_dict
 
 config_raw = config_dict
 timezone = pytz.timezone(config_dict['system']['timezone'])
@@ -48,6 +51,8 @@ redisc = redis.StrictRedis(connection_pool=redis_pool)
 
 
 def get_symbol_metas(group_name: str = 'customized'):
+    if group_name is None:
+        group_name = 'customized'
     _strategy_config = config_dict['trade']['strategy']
     _symbol_metas = _strategy_config['symbol_metas']
     _symbols = _symbol_metas.keys()

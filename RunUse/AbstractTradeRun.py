@@ -18,13 +18,37 @@ from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
 from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace, \
-    record_trade, trade_record_namespace, leverage, timezone
+    record_trade, trade_record_namespace, leverage, timezone, get_symbol_metas
 from concurrent.futures.thread import ThreadPoolExecutor
+from apscheduler.schedulers.background import BackgroundScheduler
+
+
+def get_minute_numbers(step: int):
+    return [str(i).zfill(2) for i in range(0, 60, step)]
+
+
+def get_hour_numbers(step: int):
+    return [str(i).zfill(2) for i in range(0, 24, step)]
 
 
 class AbstractTradeRun:
 
-    def __init__(self, symbols_conf):
+    interval_map = {
+        'minute': {
+            '1m': get_minute_numbers(1),
+            '3m': get_minute_numbers(3),
+            '5m': get_minute_numbers(5),
+            '15m': get_minute_numbers(15),
+            '30m': get_minute_numbers(30)
+        },
+        'hour': {
+            '1h': get_hour_numbers(1)
+        }
+    }
+
+    def __init__(self, config: dict, group_name: str = None):
+        symbol_metas = get_symbol_metas(group_name)
+        self._config = config
         self.min_volume_dict = {}
         self.symbols_list = []
         self.symbols_dict = {}
@@ -32,7 +56,8 @@ class AbstractTradeRun:
         self.kline_time_dict = {}
         self.symbol_interval_dict = {}
         self.redisc = redisc
-        self.conf_initialize(symbols_conf)
+        self.conf_initialize(symbol_metas)
+        self.interval_metas = self._config['trade']['strategy']['interval_metas']
         self.bugcode = bugcode
         self.getToday = getToday
         self.dingding = dingding
@@ -42,6 +67,7 @@ class AbstractTradeRun:
         self.secret = secret
 
         self.engine = EventEngine()
+        self.scheduler = BackgroundScheduler(timezone=timezone)
 
         if kline_source == 'redis':
             self.binance_http = RedisWrapperBinanceFutureHttp(timezone, redisc, redis_namespace,
@@ -101,61 +127,44 @@ class AbstractTradeRun:
         except:
             self.bugcode(traceback, "mrmv_TradeRun_initialization_data")
 
-    def get_line_1min(self):
-        minute_3 = self.get_minute_numbers(3)
-        minute_5 = self.get_minute_numbers(5)
-        minute_15 = self.get_minute_numbers(15)
-        minute_30 = self.get_minute_numbers(30)
-
-        bought = 75
-        bought_bar = 10
-        exchange_interval = '1m'
-        self.get_line('minute_1', bought, bought_bar, exchange_interval)
-
+    def _trade_on_interval(self, interval: str):
         ti = self.getToday(2)
         h, m = ti.split(':')
-        # 判断分钟 3,5,15,30
-        if m in minute_3:
-            self.get_line_3min()
-        if m in minute_5:
-            self.get_line_5min()
-        if m in minute_15:
-            self.get_line_15min()
-        if m in minute_30:
-            self.get_line_30min()
+        if interval in self.interval_map['hour']:
+            if h not in self.interval_map['hour'][interval]:
+                return
+            if int(m) != 0:
+                return
+        elif interval in self.interval_map['minute']:
+            if m not in self.interval_map['minute'][interval]:
+                return
+        else:
+            raise Exception(f'unsupported interval: {interval}')
+        print(f'time: {ti}, interval: {interval} trade process')
+        self._trade_on_interval0(interval)
 
-        if m == 0:
-            self.get_line_1h()
+    def _trade_on_interval0(self, interval: str):
+        interval_meta = self.interval_metas[interval]
+        bought = interval_meta['bought']
+        bought_bar = interval_meta['bought_bar']
+        self.get_line(interval, bought, bought_bar)
 
-    def get_line_3min(self):
-        bought = 70
-        bought_bar = 10
-        exchange_interval = '3m'
-        self.get_line('minute_3', bought, bought_bar, exchange_interval)
+    def _register_position_fetcher(self):
+        self.scheduler.add_job(self.get_position, trigger='cron', id='trade_get_position', second='*/10')
 
-    def get_line_5min(self):
-        bought = 70
-        bought_bar = 10
-        exchange_interval = '5m'
-        self.get_line('minute_5', bought, bought_bar, exchange_interval)
+    def _register_intervals_from_config(self):
+        intervals = self._config['trade']['intervals']
+        for interval in intervals:
+            self._register_interval(interval)
 
-    def get_line_15min(self):
-        bought = 70
-        bought_bar = 10
-        exchange_interval = '15m'
-        self.get_line('minute_15', bought, bought_bar, exchange_interval)
+    def _register_interval(self, interval: str):
+        self.scheduler.add_job(self._trade_on_interval,
+                               trigger='cron', id=f'trade_{interval}', second='2', args=[interval])
 
-    def get_line_30min(self):
-        bought = 70
-        bought_bar = 10
-        exchange_interval = '30m'
-        self.get_line('minute_30', bought, bought_bar, exchange_interval)
-
-    def get_line_1h(self):
-        bought = 70
-        bought_bar = 10
-        exchange_interval = '1h'
-        self.get_line('hour_1', bought, bought_bar, exchange_interval)
+    def start(self):
+        self._register_position_fetcher()
+        self._register_intervals_from_config()
+        self.scheduler.start()
 
     def get_kline_data(self, symbol, sold, bought, sold_bar, bought_bar, interval, contrast, backup=False):
         if not backup:
@@ -214,13 +223,13 @@ class AbstractTradeRun:
         except:
             self.bugcode(traceback, "mrmv_TradeRun_get_position")
 
-    def get_line(self, interval: str, bought: int, bought_bar: int, exchange_interval: str):
+    def get_line(self, interval: str, bought: int, bought_bar: int):
         futures = []
         with ThreadPoolExecutor(max_workers=trade_klines_fetch_worker) as tp:
             for symbol, interval_config_dict in self.symbol_interval_dict.items():
                 interval_config = interval_config_dict[interval]
                 future = tp.submit(self.get_line0, symbol, interval_config,
-                                   bought, bought_bar, exchange_interval)
+                                   bought, bought_bar, interval)
                 futures.append(future)
         [future.result() for future in futures]
 
@@ -255,7 +264,7 @@ class AbstractTradeRun:
             position_dicts = [json.loads(str(position_dict, encoding='utf-8')) for position_dict in position_dict_bs]
             positions = []
             for position_dict in position_dicts:
-                position = SymbolPosition(None, None, None, None, None)
+                position = SymbolPosition()
                 position.__dict__ = position_dict
                 positions.append(position)
             positions_map[symbol] = positions
@@ -269,11 +278,3 @@ class AbstractTradeRun:
         else:
             precision = 0
         return precision
-
-    @staticmethod
-    def get_minute_numbers(step: int):
-        return [str(i).zfill(2) for i in range(0, 60, step)]
-
-    @staticmethod
-    def get_hour_numbers(step: int):
-        return [str(i).zfill(2) for i in range(0, 24, step)]
