@@ -133,7 +133,7 @@ class AbstractTradeRun:
         if interval in self.interval_map['hour']:
             if h not in self.interval_map['hour'][interval]:
                 return
-            if int(m) == 0:
+            if int(m) != 0:
                 return
         elif interval in self.interval_map['minute']:
             if m not in self.interval_map['minute'][interval]:
