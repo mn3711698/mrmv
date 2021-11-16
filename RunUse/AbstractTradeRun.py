@@ -18,13 +18,15 @@ from constant.constant import (EVENT_POS, EVENT_KLINE)
 from utils.event import EventEngine, Event
 from strategies.LineWith import LineWith
 from config import key, secret, redisc, kline_source, trade_klines_fetch_worker, trade_size_factor, redis_namespace, \
-    record_trade, trade_record_namespace, leverage, timezone
+    record_trade, trade_record_namespace, leverage, timezone, get_symbol_metas
 from concurrent.futures.thread import ThreadPoolExecutor
 
 
 class AbstractTradeRun:
 
-    def __init__(self, symbols_conf):
+    def __init__(self, config: dict, group_name: str = None):
+        symbol_metas = get_symbol_metas(group_name)
+        self._config = config
         self.min_volume_dict = {}
         self.symbols_list = []
         self.symbols_dict = {}
@@ -32,7 +34,7 @@ class AbstractTradeRun:
         self.kline_time_dict = {}
         self.symbol_interval_dict = {}
         self.redisc = redisc
-        self.conf_initialize(symbols_conf)
+        self.conf_initialize(symbol_metas)
         self.bugcode = bugcode
         self.getToday = getToday
         self.dingding = dingding
