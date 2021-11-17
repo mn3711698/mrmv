@@ -58,5 +58,7 @@ def get_symbol_metas(group_name: str = 'customized'):
     _symbols = _symbol_metas.keys()
     if not _strategy_config['select_all_symbols']:
         _symbols = _strategy_config['select_symbol_groups'][group_name]
+    exclude_symbols = config_dict['trade']['strategy']['exclude_symbols']
+    _symbols = [symbol for symbol in _symbols if symbol not in exclude_symbols]
 
     return {symbol: meta for symbol, meta in _symbol_metas.items() if symbol in _symbols}
