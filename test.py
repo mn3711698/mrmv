@@ -3,12 +3,15 @@ import time
 from collections import defaultdict
 from decimal import Decimal
 
+import ccxt
+
 from RunUse.AbstractTradeRun import AbstractTradeRun
 from RunUse.model.symbol_position import SymbolPosition
-from config import redisc
+from config import redisc, timezone
 
 from apscheduler.schedulers.background import BlockingScheduler
 
+from getaway.binance_http import BinanceFutureHttp, Interval
 from getaway.redis_wrapper_binance_http import RedisWrapperBinanceFutureHttp
 
 
@@ -447,5 +450,16 @@ def get_hour_numbers(step: int):
 
 
 if __name__ == '__main__':
-    print(get_hour_numbers(3))
-    print(get_minute_numbers(3))
+    client_mrm = BinanceFutureHttp(timezone=timezone)
+    client_ccxt = ccxt.binance()
+    client_redis = RedisWrapperBinanceFutureHttp(timezone=timezone, redisc=redisc, namespace='mrmv:kline')
+
+    while True:
+        time.sleep(1)
+        print('client_mrm')
+        print(client_mrm.get_kline_interval('BTCUSDT', '1m', limit=2))
+        print()
+        print('client_redis')
+        print(client_redis.get_kline_interval('BTCUSDT', '1m', limit=2))
+        print()
+        print()
