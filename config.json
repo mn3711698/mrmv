@@ -25,6 +25,7 @@
     "@add_pos_amount": "加仓次数，0不限次数，其他的整数值为最大加仓次数，每个币的次数一样，不单独设置",
     "strategy": {
       "select_all_symbols": false,
+      "exclude_symbols": [],
       "select_symbol_groups":
       {
         "customized": ["BTCUSDT", "ETHUSDT"],
