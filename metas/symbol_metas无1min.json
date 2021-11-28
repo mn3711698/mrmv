@@ -4,11 +4,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 27,
-        "sold_bar": 4,
-        "contrast": -70
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -41,11 +36,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -68
-      },
       "minute_3": {
         "sold": 20,
         "sold_bar": 2,
@@ -78,11 +68,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": 22
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -115,11 +100,6 @@
     "win_arg": 1.01,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": 13
-      },
       "minute_3": {
         "sold": 26,
         "sold_bar": 3,
@@ -152,11 +132,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": 72
-      },
       "minute_3": {
         "sold": 27,
         "sold_bar": 3,
@@ -189,11 +164,6 @@
     "win_arg": 1.01,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 4,
-        "contrast": -38
-      },
       "minute_3": {
         "sold": 26,
         "sold_bar": 2,
@@ -226,11 +196,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": -40
-      },
       "minute_3": {
         "sold": 27,
         "sold_bar": 3,
@@ -263,11 +228,6 @@
     "win_arg": 1.01,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -32
-      },
       "minute_3": {
         "sold": 26,
         "sold_bar": 2,
@@ -300,11 +260,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": 40
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -337,11 +292,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": 40
-      },
       "minute_3": {
         "sold": 21,
         "sold_bar": 2,
@@ -374,11 +324,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": 40
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -411,11 +356,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": 40
-      },
       "minute_3": {
         "sold": 23,
         "sold_bar": 5,
@@ -448,11 +388,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 2,
-        "contrast": 145
-      },
       "minute_3": {
         "sold": 30,
         "sold_bar": 5,
@@ -485,11 +420,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -15
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -522,11 +452,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -35
-      },
       "minute_3": {
         "sold": 33,
         "sold_bar": 2,
@@ -559,11 +484,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -60
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -596,11 +516,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 25,
-        "sold_bar": 3,
-        "contrast": 68
-      },
       "minute_3": {
         "sold": 31,
         "sold_bar": 2,
@@ -633,11 +548,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 2,
-        "contrast": 50
-      },
       "minute_3": {
         "sold": 34,
         "sold_bar": 2,
@@ -670,11 +580,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": 60
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -707,11 +612,6 @@
     "win_arg": 1.006,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 25,
-        "sold_bar": 3,
-        "contrast": -65
-      },
       "minute_3": {
         "sold": 29,
         "sold_bar": 2,
@@ -744,11 +644,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 25,
-        "sold_bar": 2,
-        "contrast": 40
-      },
       "minute_3": {
         "sold": 31,
         "sold_bar": 2,
@@ -781,11 +676,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -70
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -818,11 +708,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": -65
-      },
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -855,11 +740,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": -20
-      },
       "minute_3": {
         "sold": 31,
         "sold_bar": 2,
@@ -892,11 +772,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": 50
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -929,11 +804,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 25,
-        "sold_bar": 3,
-        "contrast": 138
-      },
       "minute_3": {
         "sold": 34,
         "sold_bar": 2,
@@ -966,11 +836,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": 41
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 3,
@@ -1003,11 +868,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -60
-      },
       "minute_3": {
         "sold": 29,
         "sold_bar": 2,
@@ -1040,11 +900,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": 36
-      },
       "minute_3": {
         "sold": 26,
         "sold_bar": 2,
@@ -1077,11 +932,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -40
-      },
       "minute_3": {
         "sold": 31,
         "sold_bar": 2,
@@ -1114,11 +964,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 17,
-        "sold_bar": 3,
-        "contrast": -40
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -1151,11 +996,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 17,
-        "sold_bar": 3,
-        "contrast": -45
-      },
       "minute_3": {
         "sold": 29,
         "sold_bar": 2,
@@ -1188,11 +1028,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": 50
-      },
       "minute_3": {
         "sold": 22,
         "sold_bar": 2,
@@ -1225,11 +1060,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 27,
-        "sold_bar": 4,
-        "contrast": -70
-      },
       "minute_3": {
         "sold": 29,
         "sold_bar": 2,
@@ -1262,11 +1092,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 3,
-        "contrast": 150
-      },
       "minute_3": {
         "sold": 20,
         "sold_bar": 4,
@@ -1299,11 +1124,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": 110
-      },
       "minute_3": {
         "sold": 21,
         "sold_bar": 2,
@@ -1336,11 +1156,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -36
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -1373,11 +1188,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": 40
-      },
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -1410,11 +1220,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 4,
-        "contrast": -25
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 5,
@@ -1447,11 +1252,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": 70
-      },
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -1484,11 +1284,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -30
-      },
       "minute_3": {
         "sold": 27,
         "sold_bar": 3,
@@ -1521,11 +1316,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 25,
-        "sold_bar": 3,
-        "contrast": -60
-      },
       "minute_3": {
         "sold": 26,
         "sold_bar": 2,
@@ -1558,11 +1348,6 @@
     "win_arg": 1.007,
     "add_arg": 0.97,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -50
-      },
       "minute_3": {
         "sold": 33,
         "sold_bar": 3,
@@ -1595,11 +1380,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": 70
-      },
       "minute_3": {
         "sold": 27,
         "sold_bar": 5,
@@ -1632,11 +1412,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 15,
-        "sold_bar": 4,
-        "contrast": 50
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -1669,11 +1444,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 16,
-        "sold_bar": 3,
-        "contrast": 40
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -1706,11 +1476,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 17,
-        "sold_bar": 3,
-        "contrast": 50
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -1743,11 +1509,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 5,
-        "contrast": 111
-      },
       "minute_3": {
         "sold": 21,
         "sold_bar": 2,
@@ -1780,11 +1541,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -70
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -1817,11 +1573,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 4,
-        "contrast": 66
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -1854,11 +1606,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 15,
-        "sold_bar": 3,
-        "contrast": 63
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -1891,11 +1639,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": 80
-      },
+
       "minute_3": {
         "sold": 30,
         "sold_bar": 2,
@@ -1928,11 +1672,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -40
-      },
+
       "minute_3": {
         "sold": 19,
         "sold_bar": 5,
@@ -1965,11 +1705,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": -40
-      },
+
       "minute_3": {
         "sold": 29,
         "sold_bar": 2,
@@ -2002,11 +1738,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 3,
-        "contrast": -40
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -2039,11 +1771,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 17,
-        "sold_bar": 3,
-        "contrast": -61
-      },
+
       "minute_3": {
         "sold": 22,
         "sold_bar": 2,
@@ -2076,11 +1804,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 27,
-        "sold_bar": 3,
-        "contrast": 60
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -2113,11 +1837,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -69
-      },
+
       "minute_3": {
         "sold": 21,
         "sold_bar": 2,
@@ -2150,11 +1870,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -59
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -2187,11 +1902,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": 72
-      },
+
       "minute_3": {
         "sold": 17,
         "sold_bar": 5,
@@ -2224,11 +1935,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 28,
-        "sold_bar": 3,
-        "contrast": 50
-      },
+
       "minute_3": {
         "sold": 22,
         "sold_bar": 2,
@@ -2261,11 +1968,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -60
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -2298,11 +2001,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": 70
-      },
       "minute_3": {
         "sold": 24,
         "sold_bar": 2,
@@ -2335,11 +2033,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 3,
-        "contrast": 144
-      },
+
       "minute_3": {
         "sold": 32,
         "sold_bar": 2,
@@ -2372,11 +2066,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -40
-      },
+
       "minute_3": {
         "sold": 31,
         "sold_bar": 2,
@@ -2409,11 +2099,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -24
-      },
+
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -2446,11 +2132,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 2,
-        "contrast": -55
-      },
+
       "minute_3": {
         "sold": 20,
         "sold_bar": 2,
@@ -2483,11 +2165,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": -50
-      },
+
       "minute_3": {
         "sold": 19,
         "sold_bar": 5,
@@ -2520,11 +2198,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": -50
-      },
+
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -2557,11 +2231,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 32,
-        "sold_bar": 2,
-        "contrast": -71
-      },
+
       "minute_3": {
         "sold": 22,
         "sold_bar": 5,
@@ -2594,11 +2264,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": 90
-      },
+
       "minute_3": {
         "sold": 24,
         "sold_bar": 2,
@@ -2631,11 +2297,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -50
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -2668,11 +2330,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -33
-      },
+
       "minute_3": {
         "sold": 30,
         "sold_bar": 6,
@@ -2705,11 +2363,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": -60
-      },
+
       "minute_3": {
         "sold": 26,
         "sold_bar": 2,
@@ -2742,11 +2396,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -16
-      },
+
       "minute_3": {
         "sold": 17,
         "sold_bar": 2,
@@ -2779,11 +2429,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": 90
-      },
+
       "minute_3": {
         "sold": 15,
         "sold_bar": 5,
@@ -2816,11 +2462,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 3,
-        "contrast": -60
-      },
       "minute_3": {
         "sold": 20,
         "sold_bar": 5,
@@ -2853,11 +2494,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -60
-      },
+
       "minute_3": {
         "sold": 22,
         "sold_bar": 2,
@@ -2890,11 +2527,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": 60
-      },
+
       "minute_3": {
         "sold": 20,
         "sold_bar": 5,
@@ -2927,11 +2560,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": 110
-      },
+
       "minute_3": {
         "sold": 24,
         "sold_bar": 2,
@@ -2964,11 +2593,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -57
-      },
       "minute_3": {
         "sold": 33,
         "sold_bar": 2,
@@ -3001,11 +2625,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -40
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 5,
@@ -3038,11 +2658,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -32
-      },
+
       "minute_3": {
         "sold": 20,
         "sold_bar": 5,
@@ -3075,11 +2691,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -20
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -3112,11 +2723,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": -40
-      },
+
       "minute_3": {
         "sold": 20,
         "sold_bar": 5,
@@ -3149,11 +2756,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 26,
-        "sold_bar": 3,
-        "contrast": 60
-      },
+
       "minute_3": {
         "sold": 24,
         "sold_bar": 2,
@@ -3186,11 +2789,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": -45
-      },
+
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -3223,11 +2822,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -20
-      },
+
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -3260,11 +2855,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -50
-      },
+
       "minute_3": {
         "sold": 26,
         "sold_bar": 2,
@@ -3297,11 +2888,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -80
-      },
+
       "minute_3": {
         "sold": 24,
         "sold_bar": 3,
@@ -3334,11 +2921,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -55
-      },
+
       "minute_3": {
         "sold": 29,
         "sold_bar": 2,
@@ -3371,11 +2954,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 17,
-        "sold_bar": 3,
-        "contrast": 30
-      },
+
       "minute_3": {
         "sold": 33,
         "sold_bar": 2,
@@ -3408,11 +2987,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 12,
-        "sold_bar": 5,
-        "contrast": -24
-      },
+
       "minute_3": {
         "sold": 22,
         "sold_bar": 3,
@@ -3445,11 +3020,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 28,
-        "sold_bar": 3,
-        "contrast": -64
-      },
+
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -3482,11 +3053,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 20,
-        "sold_bar": 3,
-        "contrast": -60
-      },
+
       "minute_3": {
         "sold": 22,
         "sold_bar": 5,
@@ -3519,11 +3086,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 14,
-        "sold_bar": 5,
-        "contrast": -60
-      },
+
       "minute_3": {
         "sold": 24,
         "sold_bar": 5,
@@ -3556,11 +3119,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 16,
-        "sold_bar": 3,
-        "contrast": 60
-      },
+
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -3593,11 +3152,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": -48
-      },
+
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -3630,11 +3185,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 3,
-        "contrast": -70
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -3667,11 +3218,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 4,
-        "contrast": -50
-      },
+
       "minute_3": {
         "sold": 23,
         "sold_bar": 5,
@@ -3704,11 +3251,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 24,
-        "sold_bar": 4,
-        "contrast": -60
-      },
+
       "minute_3": {
         "sold": 29,
         "sold_bar": 2,
@@ -3741,11 +3284,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -30
-      },
+
       "minute_3": {
         "sold": 25,
         "sold_bar": 5,
@@ -3778,11 +3317,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 15,
-        "sold_bar": 4,
-        "contrast": -40
-      },
+
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -3815,11 +3350,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 5,
-        "contrast": -25
-      },
+
       "minute_3": {
         "sold": 30,
         "sold_bar": 5,
@@ -3852,11 +3383,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -30
-      },
+
       "minute_3": {
         "sold": 20,
         "sold_bar": 2,
@@ -3889,11 +3416,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 27,
-        "sold_bar": 3,
-        "contrast": 49
-      },
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -3926,11 +3448,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 16,
-        "sold_bar": 3,
-        "contrast": 90
-      },
       "minute_3": {
         "sold": 25,
         "sold_bar": 2,
@@ -3963,11 +3480,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 4,
-        "contrast": 80
-      },
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -4000,11 +3512,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -36
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -4037,11 +3544,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -37
-      },
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -4074,11 +3576,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 22,
-        "sold_bar": 3,
-        "contrast": -30
-      },
       "minute_3": {
         "sold": 27,
         "sold_bar": 2,
@@ -4111,11 +3608,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 19,
-        "sold_bar": 3,
-        "contrast": 70
-      },
       "minute_3": {
         "sold": 24,
         "sold_bar": 2,
@@ -4148,11 +3640,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": 50
-      },
       "minute_3": {
         "sold": 23,
         "sold_bar": 2,
@@ -4185,11 +3672,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -75
-      },
       "minute_3": {
         "sold": 24,
         "sold_bar": 2,
@@ -4222,11 +3704,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -60
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -4259,11 +3736,6 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 21,
-        "sold_bar": 3,
-        "contrast": -50
-      },
       "minute_3": {
         "sold": 28,
         "sold_bar": 2,
@@ -4296,11 +3768,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 18,
-        "sold_bar": 3,
-        "contrast": -15
-      },
+
       "minute_3": {
         "sold": 21,
         "sold_bar": 4,
@@ -4333,11 +3801,6 @@
     "win_arg": 1.0075,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 23,
-        "sold_bar": 3,
-        "contrast": -35
-      },
       "minute_3": {
         "sold": 30,
         "sold_bar": 2,
@@ -4370,11 +3833,7 @@
     "win_arg": 1.007,
     "add_arg": 0.972,
     "interval": {
-      "minute_1": {
-        "sold": 27,
-        "sold_bar": 3,
-        "contrast": -69
-      },
+
       "minute_3": {
         "sold": 31,
         "sold_bar": 2,
