@@ -46,7 +46,7 @@ docker rm <策略的唯一标识> 可以删除策略, 但是必须先停止
 现在附上即时可用的镜像提供给不需要自己构建镜像的人使用, 记住先要提供自己的config.json, 也需要自己改动配置文件的路径:
 
 默认币种:
-docker run -d -v <config-dir>/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> flamhaze5946/mrmv-trade-lite:20211111.1.0.0 python Runner.py
+docker run -d -v <config-dir>/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> flamhaze5946/mrmv-trade-lite:20211128.1.0.0 python Runner.py
 
 预设币种:
-docker run -d -v <config-dir>/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> flamhaze5946/mrmv-trade-lite:20211111.1.0.0 python Runner.py @select_symbols_1
+docker run -d -v <config-dir>/config.json:/var/games/mrmv/config.json --restart=always --name <策略名> flamhaze5946/mrmv-trade-lite:20211128.1.0.0 python Runner.py @select_symbols_1

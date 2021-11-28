@@ -1,6 +1,7 @@
 {
   "trade": {
     "meta_version": "v3",
+    "@meta_version": "目前可以选择的版本再metas文件夹下, 填入其文件夹名即可, 如v1, v2, v3",
     "trade_size_factor": 1,
     "leverage": 10,
     "intervals": [
