@@ -13,14 +13,19 @@ version_flag = '20211109'
 
 with open(r'config.json', encoding='utf-8') as config_file:
     config_dict = json.load(config_file)
-with open(r'metas/symbol_metas.json', encoding='utf-8') as symbol_metas_file:
+config_raw = config_dict
+
+meta_version = config_dict['trade']['meta_version']
+meta_path = rf'metas/{meta_version}'
+print(f'meta_version: {meta_version}')
+
+with open(rf'{meta_path}/symbol/symbol_metas.json', encoding='utf-8') as symbol_metas_file:
     symbol_metas_dict = json.load(symbol_metas_file)
     config_dict['trade']['strategy']['symbol_metas'] = symbol_metas_dict
-with open(r'metas/interval_metas.json', encoding='utf-8') as interval_metas_file:
+with open(rf'{meta_path}/interval/interval_metas.json', encoding='utf-8') as interval_metas_file:
     interval_metas_dict = json.load(interval_metas_file)
     config_dict['trade']['strategy']['interval_metas'] = interval_metas_dict
 
-config_raw = config_dict
 timezone = pytz.timezone(config_dict['system']['timezone'])
 print_error = config_dict['system']['print_error']
 
@@ -58,5 +63,7 @@ def get_symbol_metas(group_name: str = 'customized'):
     _symbols = _symbol_metas.keys()
     if not _strategy_config['select_all_symbols']:
         _symbols = _strategy_config['select_symbol_groups'][group_name]
+    exclude_symbols = config_dict['trade']['strategy']['exclude_symbols']
+    _symbols = [symbol for symbol in _symbols if symbol not in exclude_symbols]
 
     return {symbol: meta for symbol, meta in _symbol_metas.items() if symbol in _symbols}

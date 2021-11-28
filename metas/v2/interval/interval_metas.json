@@ -1,0 +1,32 @@
+{
+  "1m":
+  {
+    "bought": 75,
+    "bought_bar": 10
+  },
+  "3m":
+  {
+    "bought": 70,
+    "bought_bar": 10
+  },
+  "5m":
+  {
+    "bought": 70,
+    "bought_bar": 10
+  },
+  "15m":
+  {
+    "bought": 70,
+    "bought_bar": 10
+  },
+  "30m":
+  {
+    "bought": 70,
+    "bought_bar": 10
+  },
+  "1h":
+  {
+    "bought": 70,
+    "bought_bar": 10
+  }
+}

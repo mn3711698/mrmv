@@ -1,5 +1,7 @@
 {
   "trade": {
+    "meta_version": "v3",
+    "@meta_version": "目前可以选择的版本再metas文件夹下, 填入其文件夹名即可, 如v1, v2, v3",
     "trade_size_factor": 1,
     "leverage": 10,
     "intervals": [
@@ -25,6 +27,7 @@
     "@add_pos_amount": "加仓次数，0不限次数，其他的整数值为最大加仓次数，每个币的次数一样，不单独设置",
     "strategy": {
       "select_all_symbols": false,
+      "exclude_symbols": [],
       "select_symbol_groups":
       {
         "customized": ["BTCUSDT", "ETHUSDT"],
