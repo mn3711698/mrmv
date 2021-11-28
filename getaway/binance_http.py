@@ -131,7 +131,7 @@ class BinanceFutureHttp(object):
         return requests.request(req_method.value, url=url, headers=headers, timeout=self.timeout).json()
 
     def server_time(self):
-        path = '/fapi/v1/time'
+        path = '/fapi/v3/time'
         return self.request(req_method=RequestMethod.GET, path=path)
 
     def exchangeInfo(self):
@@ -154,7 +154,7 @@ class BinanceFutureHttp(object):
         :return:
         """
 
-        path = '/fapi/v1/exchangeInfo'
+        path = '/fapi/v3/exchangeInfo'
         return self.request(req_method=RequestMethod.GET, path=path)
 
     def order_book(self, symbol, limit=5):
@@ -162,7 +162,7 @@ class BinanceFutureHttp(object):
         if limit not in limits:
             limit = 5
 
-        path = "/fapi/v1/depth"
+        path = "/fapi/v3/depth"
         query_dict = {"symbol": symbol,
                       "limit": limit
                       }
@@ -191,7 +191,7 @@ class BinanceFutureHttp(object):
             "17928899.62484339" // 请忽略该参数
         ]
         """
-        path = "/fapi/v1/klines"
+        path = "/fapi/v3/klines"
         query_dict = {
             "symbol": symbol,
             "interval": interval.value,
@@ -233,7 +233,7 @@ class BinanceFutureHttp(object):
             "17928899.62484339" // 请忽略该参数
         ]
         """
-        path = "/fapi/v1/klines"
+        path = "/fapi/v3/klines"
         query_dict = {
             "symbol": symbol,
             "interval": interval,
@@ -254,7 +254,7 @@ class BinanceFutureHttp(object):
 
     def more_get_kline(self, symbol, interval: Interval, start_time=None, end_time=None, limit=500, max_try_time=10):
         # get_kline
-        path = "/fapi/v1/klines"
+        path = "/fapi/v3/klines"
         query_dict = {
             "symbol": symbol,
             "interval": interval.value,
@@ -299,7 +299,7 @@ class BinanceFutureHttp(object):
             "17928899.62484339" // 请忽略该参数
         ]
         """
-        # path = "/fapi/v1/klines"
+        # path = "/fapi/v3/klines"
         path = "/api/v3/klines"
         query_dict = {
             "symbol": symbol,
@@ -319,12 +319,12 @@ class BinanceFutureHttp(object):
                 return data
 
     def get_latest_price(self, symbol):
-        path = "/fapi/v1/ticker/price"
+        path = "/fapi/v3/ticker/price"
         query_dict = {"symbol": symbol}
         return self.request(RequestMethod.GET, path, query_dict)
 
     def get_ticker(self, symbol):
-        path = "/fapi/v1/ticker/bookTicker"
+        path = "/fapi/v3/ticker/bookTicker"
         query_dict = {"symbol": symbol}
         return self.request(RequestMethod.GET, path, query_dict)
 
@@ -370,7 +370,7 @@ class BinanceFutureHttp(object):
 
         """
 
-        path = '/fapi/v1/order'
+        path = '/fapi/v3/order'
 
         params = {
             "symbol": symbol,
@@ -417,7 +417,7 @@ class BinanceFutureHttp(object):
 
         """
 
-        path = '/fapi/v1/order'
+        path = '/fapi/v3/order'
 
         params = {
             "symbol": symbol,
@@ -446,7 +446,7 @@ class BinanceFutureHttp(object):
         return self.request(RequestMethod.POST, path=path, requery_dict=params, verify=True)
 
     def get_order(self,symbol, order_id=None):
-        path = "/fapi/v1/order"
+        path = "/fapi/v3/order"
         query_dict = {"symbol": symbol, "timestamp": self._timestamp()}
         if order_id:
             query_dict["orderId"] = order_id
@@ -454,7 +454,7 @@ class BinanceFutureHttp(object):
         return self.request(RequestMethod.GET, path, query_dict, verify=True)
 
     def cancel_order(self, symbol, order_id=None):
-        path = "/fapi/v1/order"
+        path = "/fapi/v3/order"
         params = {"symbol": symbol, "timestamp": self._timestamp()}
         if order_id:
             params["orderId"] = order_id
@@ -462,13 +462,13 @@ class BinanceFutureHttp(object):
         return self.request(RequestMethod.DELETE, path, params, verify=True)
 
     def set_leverage(self, symbol: str, leverage: int):
-        path = "/fapi/v1/leverage"
+        path = "/fapi/v3/leverage"
         params = {"symbol": symbol, "leverage": leverage, "timestamp": self._timestamp()}
 
         return self.request(RequestMethod.POST, path, params, verify=True)
 
     def get_open_orders(self, symbol=None):
-        path = "/fapi/v1/openOrders"
+        path = "/fapi/v3/openOrders"
 
         params = {"timestamp": self._timestamp()}
         if symbol:
@@ -481,7 +481,7 @@ class BinanceFutureHttp(object):
         [{'accountId': 18396, 'asset': 'USDT', 'balance': '530.21334791', 'withdrawAvailable': '530.21334791', 'updateTime': 1570330854015}]
         :return:
         """
-        path = "/fapi/v1/balance"
+        path = "/fapi/v3/balance"
         params = {"timestamp": self._timestamp()}
 
         return self.request(RequestMethod.GET, path=path, requery_dict=params, verify=True)
@@ -497,7 +497,7 @@ class BinanceFutureHttp(object):
         'maxWithdrawAmount': '530.2133479100000'}]}
         :return:
         """
-        path = "/fapi/v1/account"
+        path = "/fapi/v3/account"
         params = {"timestamp": self._timestamp()}
         return self.request(RequestMethod.GET, path, params, verify=True)
 
@@ -506,7 +506,7 @@ class BinanceFutureHttp(object):
         [{'symbol': 'BTCUSDT', 'positionAmt': '0.000', 'entryPrice': '0.00000', 'markPrice': '8326.40833498', 'unRealizedProfit': '0.00000000', 'liquidationPrice': '0'}]
         :return:
         """
-        path = "/fapi/v1/positionRisk"
+        path = "/fapi/v3/positionRisk"
         params = {"timestamp": self._timestamp()}
         return self.request(RequestMethod.GET, path, params, verify=True)
 

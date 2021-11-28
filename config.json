@@ -1,5 +1,6 @@
 {
   "trade": {
+    "meta_version": "v3",
     "trade_size_factor": 1,
     "leverage": 10,
     "intervals": [
