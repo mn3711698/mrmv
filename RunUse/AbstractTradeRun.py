@@ -124,7 +124,7 @@ class AbstractTradeRun:
                                 self.min_volume_dict[_symbol] = min_qty
             for _symbol in self.trading_size_dict.keys():
                 self.binance_http.set_leverage(_symbol, leverage)
-        except:
+        except Exception as e:
             self.bugcode(traceback, "mrmv_TradeRun_initialization_data")
 
     def _trade_on_interval(self, interval: str):
