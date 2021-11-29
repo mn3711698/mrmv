@@ -13,7 +13,7 @@ from getaway.binance_http import BinanceFutureHttp
 class RedisWrapperBinanceFutureHttp(BinanceFutureHttp):
 
     def __init__(self, timezone, redisc: StrictRedis, namespace: str = 'kline', key=None, secret=None, host=None,
-                 time_adjust: bool = True, timeout=30):
+                 time_adjust: bool = False, timeout=30):
         super().__init__(timezone, key=key, secret=secret, host=host, time_adjust=time_adjust, timeout=timeout)
         self.redisc = redisc
         self.namespace = namespace

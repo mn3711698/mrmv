@@ -72,7 +72,7 @@ class PositionSide(Enum):
 
 class BinanceFutureHttp(object):
 
-    def __init__(self, timezone, key=None, secret=None, host=None, time_adjust: bool = True, timeout=30):
+    def __init__(self, timezone, key=None, secret=None, host=None, time_adjust: bool = False, timeout=30):
         self.key = key
         self.secret = secret
         self.host = host if host else "https://fapi.binance.com"
