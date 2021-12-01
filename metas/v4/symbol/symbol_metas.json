@@ -1,0 +1,4405 @@
+{
+  "AAVEUSDT": {
+    "trading_size": 0.2,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 33
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_5": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 4
+      },
+      "minute_15": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 15
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 10
+      }
+    }
+  },
+  "KSMUSDT": {
+    "trading_size": 0.3,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 4
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 12
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 2
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 50
+      }
+    }
+  },
+  "UNIUSDT": {
+    "trading_size": 1.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 27,
+        "sold_bar": 3,
+        "contrast": 10
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 13
+      },
+      "minute_5": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 53
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 15
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 10
+      }
+    }
+  },
+  "EGLDUSDT": {
+    "trading_size": 0.6,
+    "win_arg": 1.01,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_3": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 20
+      }
+    }
+  },
+  "BNBUSDT": {
+    "trading_size": 0.03,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 24
+      },
+      "minute_5": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 36
+      },
+      "minute_15": {
+        "sold": 35,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_30": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 50
+      }
+    }
+  },
+  "SOLUSDT": {
+    "trading_size": 1.0,
+    "win_arg": 1.01,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_5": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 41
+      },
+      "minute_15": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 91
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 5
+      },
+      "hour_1": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 20
+      }
+    }
+  },
+  "DOTUSDT": {
+    "trading_size": 0.6,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 27
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 95
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 42
+      }
+    }
+  },
+  "BTCUSDT": {
+    "trading_size": 0.001,
+    "win_arg": 1.01,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -32
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 1
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -25
+      },
+      "minute_15": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 71
+      },
+      "minute_30": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 68
+      },
+      "hour_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 119
+      }
+    }
+  },
+  "YFIUSDT": {
+    "trading_size": 0.002,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 45
+      },
+      "minute_15": {
+        "sold": 35,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "minute_30": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "hour_1": {
+        "sold": 34,
+        "sold_bar": 5,
+        "contrast": 90
+      }
+    }
+  },
+  "ETHUSDT": {
+    "trading_size": 0.002,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21.5,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -12
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -12
+      },
+      "minute_15": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": -5
+      },
+      "minute_30": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": -4
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 40
+      }
+    }
+  },
+  "LTCUSDT": {
+    "trading_size": 0.03,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -13
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -12
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -25
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 70
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 80
+      }
+    }
+  },
+  "BCHUSDT": {
+    "trading_size": 0.08,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 16
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -15
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -5
+      },
+      "minute_30": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 33
+      }
+    }
+  },
+  "MKRUSDT": {
+    "trading_size": 0.005,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22.5,
+        "sold_bar": 4,
+        "contrast": 10
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 2
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 145
+      },
+      "minute_15": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": -22
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 22
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 24
+      }
+    }
+  },
+  "DASHUSDT": {
+    "trading_size": 0.09,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 4,
+        "contrast": -14
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -15
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "minute_15": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": -8
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 18
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 23
+      }
+    }
+  },
+  "ZECUSDT": {
+    "trading_size": 0.5,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 73
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 22
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 18
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 6
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 153
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 45
+      }
+    }
+  },
+  "ZENUSDT": {
+    "trading_size": 0.3,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -60
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 8
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -31
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 68
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 21
+      }
+    }
+  },
+  "FILUSDT": {
+    "trading_size": 0.4,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -65
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -24
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 131
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 68
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 63
+      }
+    }
+  },
+  "AVAXUSDT": {
+    "trading_size": 1.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -19
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -26
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 44
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 78
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 10
+      }
+    }
+  },
+  "LUNAUSDT": {
+    "trading_size": 2.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -40
+      },
+      "minute_3": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 59
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 178
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 78
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 23
+      }
+    }
+  },
+  "YFIIUSDT": {
+    "trading_size": 0.003,
+    "win_arg": 1.006,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -41
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -52
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 83
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 14
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 31
+      }
+    }
+  },
+  "COMPUSDT": {
+    "trading_size": 0.03,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -6
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -41
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -21
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 22
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 34
+      }
+    }
+  },
+  "XMRUSDT": {
+    "trading_size": 0.05,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 21
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 230
+      },
+      "minute_15": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -39
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 44
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 24
+      }
+    }
+  },
+  "TRBUSDT": {
+    "trading_size": 0.5,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 186
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 5
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 84
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 78
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 5
+      }
+    }
+  },
+  "NEOUSDT": {
+    "trading_size": 0.5,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 53
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 38
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -3
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 26
+      }
+    }
+  },
+  "NEARUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 7
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -24
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 69
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 71
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 15
+      }
+    }
+  },
+  "ATOMUSDT": {
+    "trading_size": 0.5,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 59
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 13
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 62
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -19
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 40
+      }
+    }
+  },
+  "AXSUSDT": {
+    "trading_size": 2.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 39
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 67
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 166
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 51
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 100
+      }
+    }
+  },
+  "ICPUSDT": {
+    "trading_size": 0.6,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -42
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 33
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 220
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 77
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 64
+      }
+    }
+  },
+  "WAVESUSDT": {
+    "trading_size": 0.6,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -41
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 75
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 101
+      },
+      "hour_1": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 1
+      }
+    }
+  },
+  "LINKUSDT": {
+    "trading_size": 0.6,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -14
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 58
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 57
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 22
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 12
+      }
+    }
+  },
+  "BALUSDT": {
+    "trading_size": 0.6,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -40
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 110
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 39
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 91
+      }
+    }
+  },
+  "HNTUSDT": {
+    "trading_size": 2.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 52
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -22
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 14
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 83
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 16
+      }
+    }
+  },
+  "DYDXUSDT": {
+    "trading_size": 1.1,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 200
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 86
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 190
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 4
+      }
+    }
+  },
+  "ALICEUSDT": {
+    "trading_size": 1.2,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 29,
+        "sold_bar": 4,
+        "contrast": 150
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_15": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 75
+      }
+    }
+  },
+  "SNXUSDT": {
+    "trading_size": 1.1,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 105
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 22
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 27
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -14
+      }
+    }
+  },
+  "QTUMUSDT": {
+    "trading_size": 1.2,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 62
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -11
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 46
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 14
+      }
+    }
+  },
+  "RAYUSDT": {
+    "trading_size": 0.9,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -38
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 125
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -25
+      }
+    }
+  },
+  "SUSHIUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 29
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 114
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -27
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 245
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 52
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 21
+      }
+    }
+  },
+  "OMGUSDT": {
+    "trading_size": 1.2,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 300
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 47
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 113
+      },
+      "minute_30": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -14
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 101
+      }
+    }
+  },
+  "MASKUSDT": {
+    "trading_size": 2.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 54
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 350
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 178
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 111
+      },
+      "minute_30": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 38
+      }
+    }
+  },
+  "UNFIUSDT": {
+    "trading_size": 1.2,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -53
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 218
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -58
+      },
+      "minute_15": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 94
+      },
+      "minute_30": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 92
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 81
+      }
+    }
+  },
+  "SRMUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 70
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 65
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 155
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 59
+      },
+      "hour_1": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 115
+      }
+    }
+  },
+  "GTCUSDT": {
+    "trading_size": 1.5,
+    "win_arg": 1.007,
+    "add_arg": 0.97,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 49
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 400
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -15
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 72
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 175
+      },
+      "hour_1": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 79
+      }
+    }
+  },
+  "RUNEUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 126
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 42
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 44
+      },
+      "hour_1": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 89
+      }
+    }
+  },
+  "BANDUSDT": {
+    "trading_size": 2.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 39
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 245
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 183
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 29
+      }
+    }
+  },
+  "XTZUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 17,
+        "sold_bar": 5,
+        "contrast": 39
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 46
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 200
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -23
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -7
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 54
+      }
+    }
+  },
+  "THETAUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -40
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -22
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 189
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 44
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 38
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 34
+      }
+    }
+  },
+  "KAVAUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": 62
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 38
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 57
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 12
+      }
+    }
+  },
+  "ARUSDT": {
+    "trading_size": 0.4,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 2,
+        "contrast": -17
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 400
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 350
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 165
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 143
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 98
+      }
+    }
+  },
+  "CELOUSDT": {
+    "trading_size": 2.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_3": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 41
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -52
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 136
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 37
+      },
+      "hour_1": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 20
+      }
+    }
+  },
+  "RLCUSDT": {
+    "trading_size": 2.5,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -25
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 42
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 88
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 88
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -23
+      }
+    }
+  },
+  "LITUSDT": {
+    "trading_size": 2.5,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 69
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 68
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 43
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 109
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 94
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 63
+      }
+    }
+  },
+  "C98USDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 28
+      },
+      "minute_3": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 250
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 250
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 36
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 300
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 32
+      }
+    }
+  },
+  "MTLUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -41
+      },
+      "minute_5": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 130
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 95
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 120
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 70
+      }
+    }
+  },
+  "1INCHUSDT": {
+    "trading_size": 3.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -4
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 44
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 136
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 56
+      }
+    }
+  },
+  "CRVUSDT": {
+    "trading_size": 7.1,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 34
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 8
+      },
+      "minute_15": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -28
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 58
+      }
+    }
+  },
+  "SXPUSDT": {
+    "trading_size": 3.6,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 58
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 474
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 133
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 81
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -2
+      }
+    }
+  },
+  "AUDIOUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 78
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -60
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 15
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 350
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 200
+      }
+    }
+  },
+  "TOMOUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 28
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 5
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 72
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -7
+      }
+    }
+  },
+  "ADAUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 17
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 50
+      }
+    }
+  },
+  "ICXUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -56
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 120
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -28
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -8
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 51
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 26
+      }
+    }
+  },
+  "BAKEUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 19,
+        "sold_bar": 5,
+        "contrast": -59
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -32
+      },
+      "minute_5": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -4
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 200
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 42
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 46
+      }
+    }
+  },
+  "BELUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 82
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 250
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 37
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 31
+      }
+    }
+  },
+  "ALGOUSDT": {
+    "trading_size": 5.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 95
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 110
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 34
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 32
+      }
+    }
+  },
+  "CTKUSDT": {
+    "trading_size": 8.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 12
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 21
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -11
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -15
+      }
+    }
+  },
+  "KNCUSDT": {
+    "trading_size": 4.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 15
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 160
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 53
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 95
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 66
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 105
+      }
+    }
+  },
+  "ENJUSDT": {
+    "trading_size": 9.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 33
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 18
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 54
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 97
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -18
+      }
+    }
+  },
+  "FTMUSDT": {
+    "trading_size": 9.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 63
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 64
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -13
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 92
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 31
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 17
+      }
+    }
+  },
+  "DODOUSDT": {
+    "trading_size": 9.6,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 48
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 70
+      }
+    }
+  },
+  "MATICUSDT": {
+    "trading_size": 7.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -65
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 120
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 52
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 35
+      }
+    }
+  },
+  "IOTAUSDT": {
+    "trading_size": 6.7,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_3": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 1
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 28
+      },
+      "minute_15": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -45
+      },
+      "minute_30": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "hour_1": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": -22
+      }
+    }
+  },
+  "STORJUSDT": {
+    "trading_size": 8.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -60
+      },
+      "minute_5": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -5
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 130
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 43
+      }
+    }
+  },
+  "XRPUSDT": {
+    "trading_size": 9.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -34
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -25
+      },
+      "minute_30": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 65
+      }
+    }
+  },
+  "RENUSDT": {
+    "trading_size": 9.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 63
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 104
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 62
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 38
+      }
+    }
+  },
+  "SFPUSDT": {
+    "trading_size": 9.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -23
+      },
+      "minute_3": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -55
+      },
+      "minute_15": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_30": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 58
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 50
+      }
+    }
+  },
+  "ZRXUSDT": {
+    "trading_size": 10.3,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 4,
+        "contrast": -23
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -8
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -4
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_30": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 39
+      }
+    }
+  },
+  "ALPHAUSDT": {
+    "trading_size": 10.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 4,
+        "contrast": -63
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 21
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 63
+      },
+      "minute_15": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 43
+      },
+      "minute_30": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 230
+      },
+      "hour_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 50
+      }
+    }
+  },
+  "ATAUSDT": {
+    "trading_size": 10.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 140
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 160
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 76
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -15
+      }
+    }
+  },
+  "ONTUSDT": {
+    "trading_size": 9.5,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -27
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 53
+      },
+      "hour_1": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 52
+      }
+    }
+  },
+  "OGNUSDT": {
+    "trading_size": 10.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 32
+      },
+      "minute_5": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -35
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 43
+      }
+    }
+  },
+  "SANDUSDT": {
+    "trading_size": 10.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -45
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -33
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -9
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 33
+      }
+    }
+  },
+  "MANAUSDT": {
+    "trading_size": 12.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -35
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 92
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -5
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 43
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": -15
+      }
+    }
+  },
+  "GRTUSDT": {
+    "trading_size": 18.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -45
+      },
+      "minute_3": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_5": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 250
+      },
+      "minute_15": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 300
+      },
+      "minute_30": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "hour_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -30
+      }
+    }
+  },
+  "OCEANUSDT": {
+    "trading_size": 11.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -10
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 62
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -23
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 50
+      }
+    }
+  },
+  "BATUSDT": {
+    "trading_size": 12.4,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_5": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_15": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 53
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 130
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 36
+      }
+    }
+  },
+  "CVCUSDT": {
+    "trading_size": 16.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 110
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 94
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -38
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 47
+      }
+    }
+  },
+  "FLMUSDT": {
+    "trading_size": 16.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -55
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 77
+      },
+      "hour_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 21
+      }
+    }
+  },
+  "KEEPUSDT": {
+    "trading_size": 20.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 57
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 75
+      }
+    }
+  },
+  "LRCUSDT": {
+    "trading_size": 26.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": -25
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -7
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 93
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -16
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 29
+      }
+    }
+  },
+  "HBARUSDT": {
+    "trading_size": 26.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 23
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_30": {
+        "sold": 34,
+        "sold_bar": 5,
+        "contrast": 51
+      },
+      "hour_1": {
+        "sold": 35,
+        "sold_bar": 5,
+        "contrast": 30
+      }
+    }
+  },
+  "CHRUSDT": {
+    "trading_size": 28.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 69
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 47
+      }
+    }
+  },
+  "SKLUSDT": {
+    "trading_size": 29.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_30": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 27
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 19
+      }
+    }
+  },
+  "NKNUSDT": {
+    "trading_size": 26.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": 78
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 83
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 11
+      }
+    }
+  },
+  "XLMUSDT": {
+    "trading_size": 27.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 75
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 70
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 41
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 47
+      },
+      "minute_30": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 31
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 43
+      }
+    }
+  },
+  "BZRXUSDT": {
+    "trading_size": 30.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 44
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 65
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 24
+      }
+    }
+  },
+  "CHZUSDT": {
+    "trading_size": 45.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -60
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_30": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "hour_1": {
+        "sold": 34,
+        "sold_bar": 5,
+        "contrast": 20
+      }
+    }
+  },
+  "1000XECUSDT": {
+    "trading_size": 37.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -15
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -33
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": -23
+      }
+    }
+  },
+  "BLZUSDT": {
+    "trading_size": 68.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": -20
+      }
+    }
+  },
+  "DOGEUSDT": {
+    "trading_size": 34.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -65
+      },
+      "minute_3": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -15
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "hour_1": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 30
+      }
+    }
+  },
+  "TLMUSDT": {
+    "trading_size": 40.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -35
+      },
+      "minute_3": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -23
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 85
+      },
+      "minute_15": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 32
+      },
+      "hour_1": {
+        "sold": 34,
+        "sold_bar": 5,
+        "contrast": 22
+      }
+    }
+  },
+  "ONEUSDT": {
+    "trading_size": 85.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": -55
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 33
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -17
+      },
+      "minute_15": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 58
+      },
+      "minute_30": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 65
+      },
+      "hour_1": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 23
+      }
+    }
+  },
+  "XEMUSDT": {
+    "trading_size": 56.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 45
+      },
+      "minute_3": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -35
+      },
+      "minute_15": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": -6
+      },
+      "minute_30": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 24
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": -15
+      }
+    }
+  },
+  "CELRUSDT": {
+    "trading_size": 64.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_3": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 46
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 52
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 21
+      }
+    }
+  },
+  "VETUSDT": {
+    "trading_size": 147.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 150
+      },
+      "minute_5": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -22
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": -6
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 32
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 55
+      }
+    }
+  },
+  "RVNUSDT": {
+    "trading_size": 74.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 4,
+        "contrast": -50
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 41
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -13
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 21
+      }
+    }
+  },
+  "GALAUSDT": {
+    "trading_size": 151.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 12
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -5
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 35
+      }
+    }
+  },
+  "ZILUSDT": {
+    "trading_size": 92.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 21,
+        "sold_bar": 5,
+        "contrast": 70
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_5": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 11
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 110
+      },
+      "minute_30": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 31
+      }
+    }
+  },
+  "TRXUSDT": {
+    "trading_size": 93.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": -45
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": -3
+      },
+      "hour_1": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 14
+      }
+    }
+  },
+  "ANKRUSDT": {
+    "trading_size": 99.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_3": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 24
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 33
+      }
+    }
+  },
+  "IOSTUSDT": {
+    "trading_size": 161.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -63
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 15
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_15": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 20
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 36
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 35
+      }
+    }
+  },
+  "DGBUSDT": {
+    "trading_size": 336.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 18,
+        "sold_bar": 5,
+        "contrast": -40
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 27
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_30": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": -22
+      },
+      "hour_1": {
+        "sold": 35,
+        "sold_bar": 5,
+        "contrast": 45
+      }
+    }
+  },
+  "RSRUSDT": {
+    "trading_size": 258.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 22,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -30
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 70
+      },
+      "minute_15": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 13
+      }
+    }
+  },
+  "LINAUSDT": {
+    "trading_size": 187.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_15": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_30": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 70
+      },
+      "hour_1": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 36
+      }
+    }
+  },
+  "BTSUSDT": {
+    "trading_size": 388.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": 60
+      },
+      "minute_3": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": -22
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 140
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 45
+      }
+    }
+  },
+  "STMXUSDT": {
+    "trading_size": 283.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_5": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 80
+      },
+      "minute_15": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 10
+      },
+      "minute_30": {
+        "sold": 33,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "hour_1": {
+        "sold": 34,
+        "sold_bar": 5,
+        "contrast": 29
+      }
+    }
+  },
+  "AKROUSDT": {
+    "trading_size": 459.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 20,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "minute_3": {
+        "sold": 26,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_5": {
+        "sold": 27,
+        "sold_bar": 5,
+        "contrast": 17
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "minute_30": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 55
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 180
+      }
+    }
+  },
+  "SCUSDT": {
+    "trading_size": 925.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -60
+      },
+      "minute_3": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 100
+      },
+      "minute_5": {
+        "sold": 25,
+        "sold_bar": 5,
+        "contrast": -19
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_30": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 40
+      },
+      "hour_1": {
+        "sold": 30,
+        "sold_bar": 5,
+        "contrast": 35
+      }
+    }
+  },
+  "1000SHIBUSDT": {
+    "trading_size": 305.0,
+    "win_arg": 1.0075,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 24,
+        "sold_bar": 5,
+        "contrast": -40
+      },
+      "minute_3": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -50
+      },
+      "minute_5": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_15": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 35
+      },
+      "minute_30": {
+        "sold": 28,
+        "sold_bar": 5,
+        "contrast": 70
+      },
+      "hour_1": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 25
+      }
+    }
+  },
+  "DENTUSDT": {
+    "trading_size": 1500.0,
+    "win_arg": 1.007,
+    "add_arg": 0.972,
+    "interval": {
+      "minute_1": {
+        "sold": 23,
+        "sold_bar": 5,
+        "contrast": 30
+      },
+      "minute_3": {
+        "sold": 29,
+        "sold_bar": 5,
+        "contrast": 25
+      },
+      "minute_5": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": -20
+      },
+      "minute_15": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 90
+      },
+      "minute_30": {
+        "sold": 31,
+        "sold_bar": 5,
+        "contrast": 50
+      },
+      "hour_1": {
+        "sold": 32,
+        "sold_bar": 5,
+        "contrast": 10
+      }
+    }
+  }
+}
